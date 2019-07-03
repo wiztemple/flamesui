@@ -1,0 +1,15 @@
+{
+  "name": "flamescss",
+  "version": "1.0.0",
+  "description": "a tiny css framework/boilerplate",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "repository": "https://github.com/wiztemple/flamescss.git",
+  "author": "wiztemple <wiztemple@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "node-sass": "^4.12.0"
+  }
+}
