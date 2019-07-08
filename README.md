@@ -52,6 +52,28 @@ p, ol, ul, dl {
 }
 ```
 
+## Buttons
+
+```
+.btn {
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: .25rem;
+  cursor: pointer;
+}
+.btn:focus {
+  outline: none;
+}
+```
+
 ## Classes and modifiers
 
 ## Creator
