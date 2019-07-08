@@ -21,7 +21,7 @@ html {
   `
 
 ## Typography
-
+---
 > style your anchor tag with sweet colors to override the default colors
 
 ```
@@ -43,7 +43,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 0.5rem; 
 }
 ```
---- 
+
 > The paragraph tag, ordered list(ol), unordered list(ul)
 ```
 p, ol, ul, dl {
@@ -51,8 +51,6 @@ p, ol, ul, dl {
   margin-bottom: 1rem; 
 }
 ```
-
-
 
 ## Classes and modifiers
 
