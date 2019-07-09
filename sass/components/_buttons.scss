@@ -6,15 +6,29 @@
   vertical-align: middle;
   user-select: none;
   border: 1px solid transparent;
-  padding: .375rem .75rem;
+  padding: 0.625rem 1.25rem;
   font-size: 1rem;
   line-height: 1.5;
   border-radius: .25rem;
   cursor: pointer;
 }
-.button-rectangle {
- 
+
+.button:focus {
+  outline: none;
 }
+
+.button-dark {
+  color: $light-grey;
+  background-color: $color-black;
+}
+.button-dark:hover {
+  background-color: $mid-black;
+}
+
+.button-rectangle {
+  border-radius: 0;
+}
+
 .button-rounded {
   border-radius: 30px;
 }

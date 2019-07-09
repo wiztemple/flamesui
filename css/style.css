@@ -1,5 +1,6 @@
 :root {
   --app-bg-color: $color-white;
+  --body-bg-color: rgba(0,0,0,0.01);
   --bg-gray: rgba(0,0,0,0.04);
   --app-main-color: #eee;
   --bg-light-blue: rgba(30, 144, 255, 0.03);
@@ -10,6 +11,8 @@ html {
   box-sizing: border-box;
   background-color: var(--body-bg-color);
   font-size: 16px;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
   min-width: 300px;
   overflow-x: hidden;
   overflow-y: scroll;
@@ -197,11 +200,24 @@ body {
   vertical-align: middle;
   user-select: none;
   border: 1px solid transparent;
-  padding: .375rem .75rem;
+  padding: 0.625rem 1.25rem;
   font-size: 1rem;
   line-height: 1.5;
   border-radius: .25rem;
   cursor: pointer; }
+
+.button:focus {
+  outline: none; }
+
+.button-dark {
+  color: #eee;
+  background-color: #000000; }
+
+.button-dark:hover {
+  background-color: #222; }
+
+.button-rectangle {
+  border-radius: 0; }
 
 .button-rounded {
   border-radius: 30px; }
