@@ -222,27 +222,54 @@ body {
 .button-rounded {
   border-radius: 30px; }
 
-.avatar-lg {
+.avatar-xl {
   width: 96px;
   height: 96px;
   object-fit: cover;
   border-radius: 50%; }
 
-.avatar-md {
+.avatar-lg {
   width: 64px;
   height: 64px;
   object-fit: cover;
   border-radius: 50%; }
 
-.avatar-sm {
+.avatar-md {
+  width: 48px;
+  height: 48px;
+  object-fit: cover;
+  border-radius: 50%; }
+
+.avatar {
   width: 32px;
   height: 32px;
   object-fit: cover;
   border-radius: 50%; }
 
-.placeholder-lg {
+.avatar-sm {
+  width: 24px;
+  height: 24px;
+  object-fit: cover;
+  border-radius: 50%; }
+
+.avatar-xs {
+  width: 16px;
+  height: 16px;
+  object-fit: cover;
+  border-radius: 50%; }
+
+.placeholder-xl {
   width: 96px;
   height: 96px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #bcc4d4;
+  border-radius: 50%; }
+
+.placeholder-lg {
+  width: 64px;
+  height: 64px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -250,8 +277,17 @@ body {
   border-radius: 50%; }
 
 .placeholder-md {
-  width: 64px;
-  height: 64px;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #bcc4d4;
+  border-radius: 50%; }
+
+.placeholder {
+  width: 32px;
+  height: 32px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -259,8 +295,17 @@ body {
   border-radius: 50%; }
 
 .placeholder-sm {
-  width: 32px;
-  height: 32px;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #bcc4d4;
+  border-radius: 50%; }
+
+.placeholder-xs {
+  width: 16px;
+  height: 16px;
   display: flex;
   justify-content: center;
   align-items: center;
