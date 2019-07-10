@@ -60,7 +60,7 @@ p, ol, ul, dl {
 ## Buttons
 
 ```
-.btn {
+.button {
   display: inline-block;
   font-weight: 400;
   text-align: center;
@@ -68,18 +68,81 @@ p, ol, ul, dl {
   vertical-align: middle;
   user-select: none;
   border: 1px solid transparent;
-  padding: .375rem .75rem;
+  padding: 0.625rem 1.25rem;
   font-size: 1rem;
   line-height: 1.5;
   border-radius: .25rem;
   cursor: pointer;
 }
-.btn:focus {
+
+.button:focus {
   outline: none;
+}
+
+.button-dark {
+  color: $light-grey;
+  background-color: $color-black;
+}
+.button-dark:hover {
+  background-color: $mid-black;
+}
+
+.button-rectangle {
+  border-radius: 0;
+}
+
+.button-rounded {
+  border-radius: 30px;
 }
 ```
 
-## Classes and modifiers
+## Forms
+```
+.input-field {
+  display: block;
+  max-width: 100%;
+  width: 100%;
+  padding: 0.625rem .75rem;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: $mid-black;
+  background-color: #fff;
+  background-clip: padding-box;
+  border-radius: 3px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.input-field:focus {
+  outline: none;
+  border-color: rgba(42, 131, 214, 0.27);
+  transition: border-color .15s ease-in-out;
+}
+
+.label {
+  color: #363636;
+  display: block;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.label:not(:last-child) {
+  margin-bottom: 0.5em;
+}
+
+.input-control {
+  margin-bottom: 10px;
+}
+
+.form-horizontal {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.form-vertical {
+  position: relative;
+}
+```
 
 ## Creator
 **Sullivan Wisdom**
