@@ -2,7 +2,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <link href="https://fonts.googleapis.com/css?family=Petit+Formal+Script&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Questrial&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="./css/style.css">
 <title>Flames -- Style Guide</title>
 </head>
@@ -32,8 +32,55 @@
       </nav>
     </div>
     <section class="container is-fluid">
-       <h1>Typography</h1>
-
+       <h1 class="pt-40">Typography</h1>
+       <div class="columns pt-30">
+         <div class="col-2">
+           <h4>Heading 1</h4>
+         </div>
+         <div class="col-10">
+           <h1>The quick brown fox jumps over a lazy dog </h1>
+         </div>
+       </div>
+      <div class="columns pt-30">
+        <div class="col-2">
+          <h4>Heading 2</h4>
+        </div>
+        <div class="col-10">
+          <h2>The quick brown fox jumps over a lazy dog</h2>
+        </div>
+      </div>
+      <div class="columns pt-30">
+        <div class="col-2">
+          <h4>Heading 3</h4>
+        </div>
+        <div class="col-10">
+          <h3>The quick brown fox jumps over a lazy dog</h3>
+        </div>
+      </div>
+      <div class="columns pt-30">
+        <div class="col-2">
+          <h4>Heading 4</h4>
+        </div>
+        <div class="col-10">
+          <h4>The quick brown fox jumps over a lazy dog</h4>
+        </div>
+      </div>
+      <div class="columns pt-30">
+        <div class="col-2">
+          <h5>Heading 5</h5>
+        </div>
+        <div class="col-10">
+          <h5>The quick brown fox jumps over a lazy dog</h5>
+        </div>
+      </div>
+      <div class="columns pt-30">
+        <div class="col-2">
+          <h6>Heading 6</h6>
+        </div>
+        <div class="col-10">
+          <h6>The quick brown fox jumps over a lazy dog</h6>
+        </div>
+      </div>
     </section>
     <section class="container is-fluid">
       <h1>Components</h1>
@@ -125,7 +172,7 @@
       <div class="container">
         <h3 class="pt-40 pb-10">Form inputs and select/dropdowns</h3>
         <div class="columns">
-          <div class="col-5">
+          <div class="col-4">
             <form class="form">
               <div class="input-control">
                 <label class="label">First Name</label>
@@ -143,8 +190,35 @@
                 <label class="label">Password</label>
                 <input class="input-field" type="password" placeholder="Password">
               </div>
+              <div class="input-control">
+                <label class="label">Textarea</label>
+                <textarea class="input-field" rows="6" placeholder="Write Some here...."></textarea>
+              </div>
               <button type="button" class="button button-rounded button-dark">Button</button>
             </form>
+            <code><div>read</div></code>
+          </div>
+          <div class="col-4">
+            <form class="form">
+              <div class="input-control">
+                <label class="label">This is ReadOnly</label>
+                <input class="input-field" type="text" placeholder="ReadOnly values here" readonly>
+              </div>
+              <div class="input-control">
+                <label class="label">This is a disabled input field</label>
+                <input class="input-field" type="text" placeholder="This is a disabled input field" disabled>
+              </div>
+              <div class="input-control">
+                <label class="label">Email</label>
+                <input class="input-field" type="email" placeholder="Email">
+              </div>
+              <div class="input-control">
+                <label class="label">Password</label>
+                <input class="input-field" type="password" placeholder="Password">
+              </div>
+              <button type="button" class="button button-rounded button-dark">Button</button>
+            </form>
+            <code><div>read</div></code>
           </div>
         </div>
       </div>
