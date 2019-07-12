@@ -18,7 +18,8 @@
   transition: border-color .15s ease-in-out;
 }
 
-.input-field:disabled, .input-field:read-only{
+.input-field:disabled,
+.input-field:read-only {
   background-color: rgba(237, 237, 237, 0.2);
 }
 
@@ -27,7 +28,7 @@
   color: rgba(54, 54, 54, 0.3);
 }
 
-.input-field::-webkit-input-placeholder{
+.input-field::-webkit-input-placeholder {
   color: #c4c4c4;
 }
 
@@ -54,4 +55,8 @@
 
 .form-vertical {
   position: relative;
+}
+
+.textarea {
+  resize: none;
 }

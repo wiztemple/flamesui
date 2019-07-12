@@ -57,6 +57,139 @@ p, ol, ul, dl {
 }
 ```
 
+## Layout
+```
+  .container {
+    width: 100%;
+    padding: 0 0.9375rem;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .container-fluid {
+    padding: 0 0.9375rem;
+  }
+
+  @media (min-width: 75rem) {
+    .container {
+      width: 71.25rem;
+    }
+  }
+
+  .columns {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -0.9375rem;
+  }
+
+  @media (min-width: 576px) {
+    .container {
+      max-width: 540px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .container {
+      max-width: 720px;
+    }
+  }
+
+  @media (min-width: 992px) {
+    .container {
+      max-width: 960px;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .container {
+      max-width: 1140px;
+    }
+  }
+
+  .col-1,.col-2, .col-3, .col-4, .col-5, .col-6, .col-7,
+  .col-8, .col-9, .col-10, .col-11, .col-12, .col, .col-auto
+  {
+    position: relative;
+    width: 100%;
+    padding: 0 15px;
+  }
+
+  @media (min-width: 768px) {
+    .col {
+      flex-basis: 0;
+      flex-grow: 1;
+      max-width: 100%;
+    }
+
+    .col-auto {
+      flex: 0 0 auto;
+      width: auto;
+      max-width: 100%;
+    }
+
+    .col-1 {
+      flex: 0 0 8.333333%;
+      max-width: 8.333333%;
+    }
+
+    .col-2 {
+      flex: 0 0 16.666667%;
+      max-width: 16.666667%;
+    }
+
+    .col-3 {
+      flex: 0 0 25%;
+      max-width: 25%;
+    }
+
+    .col-4 {
+      flex: 0 0 33.333333%;
+      max-width: 33.333333%;
+    }
+
+    .col-5 {
+      flex: 0 0 41.666667%;
+      max-width: 41.666667%;
+    }
+
+    .col-6 {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+
+    .col-7 {
+      flex: 0 0 58.333333%;
+      max-width: 58.333333%;
+    }
+
+    .col-8 {
+      flex: 0 0 66.666667%;
+      max-width: 66.666667%;
+    }
+
+    .col-9 {
+      flex: 0 0 75%;
+      max-width: 75%;
+    }
+
+    .col-10 {
+      flex: 0 0 83.333333%;
+      max-width: 83.333333%;
+    }
+
+    .col-11 {
+      flex: 0 0 91.666667%;
+      max-width: 91.666667%;
+    }
+
+    .col-12 {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+
+  }
+```
+
 ## Buttons
 
 ```

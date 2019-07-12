@@ -391,7 +391,8 @@ body {
   border-color: rgba(42, 131, 214, 0.27);
   transition: border-color .15s ease-in-out; }
 
-.input-field:disabled, .input-field:read-only {
+.input-field:disabled,
+.input-field:read-only {
   background-color: rgba(237, 237, 237, 0.2); }
 
 .input-field::-moz-placeholder,
@@ -420,6 +421,9 @@ body {
 
 .form-vertical {
   position: relative; }
+
+.textarea {
+  resize: none; }
 
 .container {
   width: 100%;
