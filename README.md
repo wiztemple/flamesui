@@ -230,6 +230,7 @@ p, ol, ul, dl {
 ```
 
 ## Forms
+![Disabled input field](./assets/images/disabled.png)
 ```
 .input-field {
   display: block;
@@ -249,6 +250,19 @@ p, ol, ul, dl {
   outline: none;
   border-color: rgba(42, 131, 214, 0.27);
   transition: border-color .15s ease-in-out;
+}
+
+.input-field:disabled,
+.input-field:read-only {
+  background-color: rgba(237, 237, 237, 0.2);
+}
+.input-field::-moz-placeholder,
+.textarea::-moz-placeholder {
+  color: rgba(54, 54, 54, 0.3);
+}
+
+.input-field::-webkit-input-placeholder {
+  color: #c4c4c4;
 }
 
 .label {
@@ -274,6 +288,10 @@ p, ol, ul, dl {
 
 .form-vertical {
   position: relative;
+}
+
+.textarea {
+  resize: none;
 }
 ```
 
