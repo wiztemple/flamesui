@@ -10,12 +10,18 @@
   background-clip: padding-box;
   border-radius: 3px;
   border: 1px solid rgba(0, 0, 0, 0.08);
-}
 
-.input-field:focus {
-  outline: none;
-  border-color: rgba(42, 131, 214, 0.27);
-  transition: border-color .15s ease-in-out;
+  &:focus {
+    outline: none;
+    border-color: rgba(42, 131, 214, 0.27);
+    transition: border-color .15s ease-in-out;
+  }
+
+  &::-moz-placeholder {
+    color: rgba(54, 54, 54, 0.3);
+  }
+
+
 }
 
 .input-field:disabled,
@@ -59,4 +65,8 @@
 
 .textarea {
   resize: none;
+
+  &::-moz-placeholder {
+    color: rgba(54, 54, 54, 0.3);
+  }
 }

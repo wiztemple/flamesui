@@ -3,11 +3,12 @@
     padding: 0 0.9375rem;
     margin: 0 auto;
     position: relative;
+
+    &-fluid {
+      padding: 0 0.9375rem;
+    }
   }
 
-  .container-fluid {
-    padding: 0 0.9375rem;
-  }
 
   @media (min-width: 75rem) {
     .container {
