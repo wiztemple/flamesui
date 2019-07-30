@@ -1,19 +1,20 @@
 /**
  * function to toggle accordion
  */
-
-const accordion = document.getElementsByTagName('accordion');
-const accordionHeaders = document.querySelectorAll('.accordion-header');
-const accordionContent = document.querySelector('.accordion-content');
-const accordionArrow = document.querySelector('.arrow');
-
-const toggleAccordion = () => {
-  accordionHeaders.forEach(accordionHeader => {
+const accordions = document.querySelectorAll('.accordion');
+const toggle = () => {
+  // const accordionContent = document.getElementsByTagName('accordion-content');
+  accordions.forEach(accordion => {
+    const accordionHeader = accordion.querySelector('.accordion-header');
     accordionHeader.addEventListener('click', () => {
-      accordionArrow.style.transform = 'rotate(180deg)';
-      accordionArrow.style.transition = 'transform .3s ease-in';
-      accordionContent.classList.toggle('active');
+      accordion.classList.toggle('active');
     }, false)
+    // if (accordionContent.style.maxHeight) {
+    //   accordionContent.style.maxHeight = null;
+    // } else {
+    //   accordionContent.style.maxHeight = accordionContent.scrollHeight + "px";
+    // } 
   })
 }
-toggleAccordion();
+toggle();
+
