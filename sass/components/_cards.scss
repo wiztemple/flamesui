@@ -73,7 +73,60 @@
   -webkit-clip-path: polygon(50% 0%, 100% 0, 100% 43%, 100% 79%, 66% 65%, 36% 78%, 0 78%, 0% 43%, 0 0);
   clip-path: polygon(50% 0%, 100% 0, 100% 43%, 100% 79%, 66% 65%, 36% 78%, 0 78%, 0% 43%, 0 0);
 }
-
+.rectcard {
+  display: flex;
+  justify-content: flex-start;
+  margin: 30px 0;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.10);
+}
+.rectcard-image {
+  width: 250px;
+  height: 200px;
+  object-fit: cover;
+  clip-path: polygon(100% 0%, 82% 50%, 100% 100%, 0 100%, 0% 50%, 0 0);
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  transition: all 0.5s ease-in-out;
+}
+.rectcard-image:hover {
+  clip-path: polygon(100% 0%, 100% 51%, 100% 100%, 0 100%, 0% 50%, 0 0);
+}
+.rectcard-content {
+  position: relative;
+  padding: 15px;
+}
+.user-details {
+  position: absolute;
+  bottom: 10px;
+}
+.rectcard-title {
+  font-size: 24px;
+}
+.rectcard-desc {
+  font-size: 14px;
+}
+  @media (max-width: 576px) {
+   .rectcard {
+     display: flex;
+     flex-direction: column;
+     justify-content: flex-start;
+     border-radius: 10px;
+     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.10);
+   }
+   .rectcard-image {
+     width: 100%;
+     height: 200px;
+     object-fit: cover;
+     clip-path: none;
+     border-radius: 10px;
+     transition: all 0.5s ease-in-out;
+   }
+   .user-details {
+     position: relative;
+     padding-top: 20px;
+   }
+  }
 /* Rectangle 14.4 */
 
 .svg:hover path {
