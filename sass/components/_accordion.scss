@@ -21,7 +21,7 @@
   color: #444;
   font-size: 14px;
   background-color: rgba(238, 238, 238, 0.3);
-  
+  transition: display ease-in-out 5s;
 }
 .accordion {
   .accordion-header {
@@ -56,7 +56,6 @@
 
     .accordion-content {
       display: block;
-      transition: display ease-in-out 2s;
     }
   }
 }

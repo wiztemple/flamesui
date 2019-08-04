@@ -9,11 +9,6 @@ const toggle = () => {
     accordionHeader.addEventListener('click', () => {
       accordion.classList.toggle('active');
     }, false)
-    // if (accordionContent.style.maxHeight) {
-    //   accordionContent.style.maxHeight = null;
-    // } else {
-    //   accordionContent.style.maxHeight = accordionContent.scrollHeight + "px";
-    // } 
   })
 }
 toggle();
