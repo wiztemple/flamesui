@@ -3,6 +3,7 @@
     padding: 0 0.9375rem;
     margin: 0 auto;
     position: relative;
+    animation: transitionIn 1s;
 
     &-fluid {
       padding: 0 0.9375rem;
@@ -151,3 +152,14 @@
     }
 
   }
+
+  @keyframes transitionIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

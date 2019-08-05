@@ -21,7 +21,6 @@
   color: #444;
   font-size: 14px;
   background-color: rgba(238, 238, 238, 0.3);
-  transition: display ease-in-out 5s;
 }
 .accordion {
   .accordion-header {
@@ -47,6 +46,7 @@
 
   .accordion-content {
     display: none;
+    opacity: 1;
   }
 
   &.active {
@@ -56,6 +56,28 @@
 
     .accordion-content {
       display: block;
+      animation: transitionIn .75s;
     }
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+  @keyframes transitionIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
