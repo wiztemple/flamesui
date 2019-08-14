@@ -1,5 +1,5 @@
 # flamescss :fire: :fire: :fire:
-A mini-sized css framework/boilerplate. It's made for developers who need more control of css styles without the burden or hidden impediments of a regular css framework. The flexibility that comes with `flames.css` is near perfect. You can pick what you need, either the `layout styles` or `the navbar styles` and use it. You don't need to leave it as `flames.css`, you can rename it to `styles.css`, just modify it however you like, it's all about you :boy: :girl: .
+A css-based web components made with Andela in-house project in mind. It's separated into components, just pick what you need and keep tweaking it till you get what you want or till you destroy it and probably have to re-write it yourself. :laughing: The flexibility that comes with `flames.css` is near perfect. You can pick what you need, either the `layout styles` or `the navbar styles` or `the buttons` and use it. You don't need to leave it as `flames.css`, you can rename it to `styles.css`, just modify it however you like, it's all about you. And one more thing, there is no file like `flames.css`, don't make it look like you are using a framework, it's not a framework, it's a UI store. :boy: :girl: .
 
 
 ## Style Guide
@@ -230,7 +230,7 @@ p, ol, ul, dl {
 ```
 
 ## Forms
-![Disabled input field](./assets/images/disabled.png)
+
 ```
 .input-field {
   display: block;

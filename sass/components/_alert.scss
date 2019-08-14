@@ -6,31 +6,31 @@
   padding: 15px 20px;
   margin-bottom: 16px;
   box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.1);
+  &-content {
+    display: flex;
+    justify-content: flex-start;
+  }
+  &-success {
+    border-left: 2px solid #02A959;
+  }
+  &-info {
+    border-left: 2px solid #2A83D6;
+    position: absolute;
+    top: 0px;
+  }
+  &-warning {
+    border-left: 2px solid #EAA318;
+  }
+  &-danger {
+    border-left: 2px solid #D60B2F;
+  }
 }
-.alert-content {
-  display: flex;
-  justify-content: flex-start;
-}
+
 .alert div:not(:first-child){
   margin: 0 10px;
 }
 .alert .emoji, .alert .alert-message {
   padding-top: 3px;
-}
-.alert-success {
-  border-left: 2px solid #02A959;
-}
-.alert-info {
-  border-left: 2px solid #2A83D6;
-  position: absolute;
-  top: 0px;
-}
-.alert-warning {
-  border-left: 2px solid #EAA318;
-}
-
-.alert-danger {
-  border-left: 2px solid #D60B2F;
 }
 
 .alert .alert-icon {

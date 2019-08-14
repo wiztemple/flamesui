@@ -15,23 +15,23 @@
   &:focus {
     outline: none;
   }
-}
-
-
-
-.button-dark {
-  color: $light-grey;
-  background-color: $color-black;
-}
-
-.button-dark:hover {
-  background-color: $mid-black;
-}
-
-.button-rectangle {
-  border-radius: 0;
-}
-
-.button-rounded {
-  border-radius: 30px;
+  &-outline {
+    border: 2px solid #eee;
+    &:hover {
+      border-color: #ddd;
+    }
+  }
+  &-dark {
+    color: $light-grey;
+    background-color: $color-black;
+    &:hover {
+      background-color: $mid-black;
+    }
+  }
+  &-rectangle {
+    border-radius: 0;
+  }
+  &-rounded {
+    border-radius: 30px;
+  }
 }
