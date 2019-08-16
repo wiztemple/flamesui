@@ -52,3 +52,34 @@ document.addEventListener('DOMContentLoaded', () => {
     alert.style.display = 'none';
   }, 4000)
 });
+
+// modal
+const modals = document.querySelectorAll('.modal');
+const buttons = document.querySelectorAll('.button-click');
+const cancelButtons = document.querySelectorAll('.close-modal');
+
+buttons.forEach(button => {
+  button.addEventListener('click', () => {
+    const modal = [...modals].find(modal => modal.dataset.id === button.dataset.target)
+    // const modal = button.nextElementSibling;
+    modal.style.display = 'block';
+  });
+});
+
+cancelButtons.forEach(cancelButton => {
+  cancelButton.addEventListener('click', () => {
+    modals.forEach(modal => {
+      modal.style.display = 'none';
+    });
+  })
+})
+// dismiss modal when the window is clicked
+document.addEventListener('click', e => {
+  modals.forEach(modal => {
+    if (modal.style.display === 'block') {
+      if (e.target.className === 'modal') {
+        modal.style.display = 'none';
+      }
+    }
+  });
+})

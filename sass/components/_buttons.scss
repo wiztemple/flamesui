@@ -1,5 +1,6 @@
 .button {
   display: inline-block;
+  font: inherit;
   font-weight: 400;
   text-align: center;
   white-space: nowrap;
@@ -16,9 +17,10 @@
     outline: none;
   }
   &-outline {
-    border: 2px solid #eee;
+    border: 2px solid $gray-1;
     &:hover {
-      border-color: #ddd;
+      background-color: $gray-1;
+      transition: background-color ease-in-out .2s;
     }
   }
   &-dark {
@@ -28,10 +30,32 @@
       background-color: $mid-black;
     }
   }
+  &-default {
+    background-color:$gray-1;
+    &:hover {
+      background-color: rgba(221, 221, 221,0.7);
+      transition: background-color ease-in-out .2s;
+    }
+  }
   &-rectangle {
     border-radius: 0;
   }
   &-rounded {
     border-radius: 30px;
   }
+  &-positive {
+    color: #fff;
+    background-color: #02A959;
+  }
+  &-outline-dark {
+    border: 1px solid #000;
+    &:hover {
+      color: $gray-1;
+      background-color: #000;
+      transition: all ease-in .1s;
+    }
+  }
+}
+.button::-moz-focus-inner {
+  border: none;
 }

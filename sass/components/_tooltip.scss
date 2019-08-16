@@ -1,0 +1,45 @@
+.tooltip {
+  position: relative;
+  text-align: center;
+  &-text {
+    position: absolute;
+    width: 150px;
+    background-color: #222;
+    color: $gray-1;
+    padding: 10px;
+    font-size: 12px;
+    text-align: center;
+    left: 50%;
+    border-radius: 3px;
+  }
+   &-top {
+    margin-left: -60px;
+    bottom: 120%;
+
+      &::before {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      margin-left: -5px;
+      border-width: 5px;
+      border-style: solid;
+      border-color: #222 transparent transparent transparent;
+    }
+  }
+   &-bottom {
+    margin-left: -60px;
+    bottom: 120%;
+
+      &::after {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      margin-left: -5px;
+      border-width: 5px;
+      border-style: solid;
+      border-color: #222 transparent transparent transparent;
+    }
+  }
+}

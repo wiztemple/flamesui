@@ -70,3 +70,25 @@
     color: rgba(54, 54, 54, 0.3);
   }
 }
+.has-icon {
+  position: relative;
+}
+.has-icon ::placeholder {
+  padding-left: 5px;
+}
+.icon-left {
+  position: absolute;
+  left: 10px;
+  top: 45px;
+  // margin: auto 10px auto 0;
+}
+.has-icon .icon-left > svg path {
+  stroke: rgba(0, 0, 0, 0.2);
+}
+.has-icon .input-field:focus + .icon-left > svg path {
+  position: relative;
+  stroke: rgba(42, 131, 214, 0.27);
+}
+.has-icon .input-field {
+  padding-left: 30px;
+}
