@@ -139,6 +139,9 @@ dl {
 .mt-20 {
   margin-top: 20px; }
 
+.mr-10 {
+  margin-right: 10px; }
+
 .justify-center {
   display: flex;
   justify-content: center;
@@ -661,6 +664,7 @@ dl {
     animation-name: modalopen;
     animation-duration: 1s; }
   .modal-header {
+    position: relative;
     padding: 20px 20px;
     background-color: #fafafa;
     color: #444;
@@ -674,13 +678,15 @@ dl {
     display: block; }
 
 .close-modal {
+  position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 30px;
   height: 30px;
   padding: 10px;
-  float: right;
+  right: 5px;
+  top: 5px;
   border-radius: 50%; }
 
 .close-modal:hover,

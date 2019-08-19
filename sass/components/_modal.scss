@@ -25,6 +25,7 @@
     animation-duration: 1s;
   }
   &-header {
+  position: relative;
   padding:20px 20px;
   background-color: rgba(250, 250, 250, 1);
   color: #444;
@@ -42,13 +43,15 @@
  }
 }
 .close-modal {
+  position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 30px;
   height: 30px;
   padding: 10px;
-  float: right;
+  right: 5px;
+  top: 5px;
   border-radius: 50%;
 }
 
