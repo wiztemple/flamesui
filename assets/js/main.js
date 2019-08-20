@@ -61,7 +61,6 @@ const cancelButtons = document.querySelectorAll('.close-modal');
 buttons.forEach(button => {
   button.addEventListener('click', () => {
     const modal = [...modals].find(modal => modal.dataset.id === button.dataset.target)
-    // const modal = button.nextElementSibling;
     modal.style.display = 'block';
   });
 });

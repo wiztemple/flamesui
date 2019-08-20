@@ -340,6 +340,9 @@ dl {
   .button-positive {
     color: #fff;
     background-color: #02A959; }
+  .button-andela {
+    color: #fff;
+    background-color: #365ddc; }
   .button-outline-dark {
     border: 1px solid #000; }
     .button-outline-dark:hover {
@@ -648,7 +651,7 @@ dl {
   left: 0;
   top: 0;
   z-index: 1000;
-  background-color: rgba(10, 10, 10, 0.3); }
+  background-color: rgba(10, 10, 10, 0.2); }
   .modal-content {
     max-height: calc(100vh - 160px);
     position: relative;
@@ -667,6 +670,7 @@ dl {
     position: relative;
     padding: 20px 20px;
     background-color: #fafafa;
+    font-size: 18px;
     color: #444;
     font-weight: 400; }
   .modal-body {

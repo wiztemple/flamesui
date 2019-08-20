@@ -44,8 +44,12 @@
     border-radius: 30px;
   }
   &-positive {
-    color: #fff;
+    color: $color-white;
     background-color: #02A959;
+  }
+  &-andela {
+    color: $color-white;
+    background-color: $andela-color;
   }
   &-outline-dark {
     border: 1px solid #000;

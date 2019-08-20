@@ -6,6 +6,9 @@ A css-based web components made with Andela in-house project in mind. It's separ
 The current style guide. It's currently been worked on.
 ![Current Style Guide](./assets/images/home.png)
 
+### Hero
+![Current Style Guide](./assets/images/Component.png)
+
 ## what you really need
 
 ```

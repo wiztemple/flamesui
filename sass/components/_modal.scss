@@ -8,7 +8,7 @@
   left: 0;
   top: 0;
   z-index: 1000;
-  background-color: rgba(10, 10, 10, 0.3);
+  background-color: rgba(10, 10, 10, 0.2);
   &-content {
     max-height: calc(100vh - 160px);
     position: relative;
@@ -28,6 +28,7 @@
   position: relative;
   padding:20px 20px;
   background-color: rgba(250, 250, 250, 1);
+  font-size: 18px;
   color: #444;
   font-weight: 400;
  }
