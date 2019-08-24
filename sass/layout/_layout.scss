@@ -45,19 +45,12 @@
     .container {
       max-width: 1140px;
     }
+    .container.is-fluid {
+    margin-left: 32px;
+    margin-right: 32px;
+    max-width: none;
   }
-
-  // .container-fluid {
-  //   width: 100%;
-  //   padding: 0 15px;
-  //   margin: 0 auto;
-  // }
-
-  // .columns {
-  //   display: flex;
-  //   flex-wrap: wrap;
-  //   margin: 0 -15px;
-  // }
+  }
 
   .col-1,
   .col-2,

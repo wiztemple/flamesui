@@ -3,19 +3,22 @@
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <link href="https://fonts.googleapis.com/css?family=Petit+Formal+Script&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="./css/style.css">
 <title>Flames -- Style Guide</title>
 </head>
 
-<body>
+<body class="navbar-fixed-top">
   <div class="flames">
     <div class="header">
-      <nav class="navbar fixed-top">
-        <div class="container">
+      <nav class="navbar white fixed-top">
+        <div class="container-fluid">
           <div class="brand">
             <a href="index.html" class="navbar-item">Flames</a>
-            <a href="#" class="navbar-burger burger">
-              <span>&NotEqual;</span>
+            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
             </a>
           </div>
           <div class="nav-menu" id="navMenu">
@@ -28,9 +31,9 @@
               <a href="index.html" class="navbar-item">
                 <svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M17 19V17C17 15.9391 16.5786 14.9217 15.8284 14.1716C15.0783 13.4214 14.0609 13 13 13H5C3.93913 13 2.92172 13.4214 2.17157 14.1716C1.42143 14.9217 1 15.9391 1 17V19"
-                    stroke="black" stroke-linecap="round" stroke-linejoin="round" />
+                    stroke="grey" stroke-linecap="round" stroke-linejoin="round" />
                   <path d="M9 9C11.2091 9 13 7.20914 13 5C13 2.79086 11.2091 1 9 1C6.79086 1 5 2.79086 5 5C5 7.20914 6.79086 9 9 9Z"
-                    stroke="black" stroke-linecap="round" stroke-linejoin="round" />
+                    stroke="grey" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
 
               </a>
@@ -39,923 +42,951 @@
         </div>
       </nav>
     </div>
-    <section class="container is-fluid">
-      <h1 class="pt-40">Typography</h1>
-      <div class="columns pt-30">
-        <div class="col-2">
-          <h4>Heading 1</h4>
-        </div>
-        <div class="col-10">
-          <h1>The quick brown fox jumps over a lazy dog </h1>
-        </div>
-      </div>
-      <div class="columns pt-30">
-        <div class="col-2">
-          <h4>Heading 2</h4>
-        </div>
-        <div class="col-10">
-          <h2>The quick brown fox jumps over a lazy dog</h2>
-        </div>
-      </div>
-      <div class="columns pt-30">
-        <div class="col-2">
-          <h4>Heading 3</h4>
-        </div>
-        <div class="col-10">
-          <h3>The quick brown fox jumps over a lazy dog</h3>
-        </div>
-      </div>
-      <div class="columns pt-30">
-        <div class="col-2">
-          <h4>Heading 4</h4>
-        </div>
-        <div class="col-10">
-          <h4>The quick brown fox jumps over a lazy dog</h4>
-        </div>
-      </div>
-      <div class="columns pt-30">
-        <div class="col-2">
-          <h5>Heading 5</h5>
-        </div>
-        <div class="col-10">
-          <h5>The quick brown fox jumps over a lazy dog</h5>
-        </div>
-      </div>
-      <div class="columns pt-30">
-        <div class="col-2">
-          <h6>Heading 6</h6>
-        </div>
-        <div class="col-10">
-          <h6>The quick brown fox jumps over a lazy dog</h6>
-        </div>
-      </div>
-    </section>
-    <section class="container is-fluid">
-      <h1>Components</h1>
-      <p>Buttons, avatars, images, cards</p>
-      <h4 class="pb-30">Avatars and Placeholders</h4>
-      <div class="columns">
-        <div class="col-6">
-          <div class="space-between align-center">
-            <div class="relative align-center">
-              <img class="avatar-xl" src="./assets/images/beauty.jpg" alt="avatar">
-            </div>
-            <div class="relative align-center">
-              <img class="avatar-lg" src="./assets/images/beauty.jpg" alt="avatar">
-            </div>
-            <div class="align-center">
-              <img class="avatar-md" src="./assets/images/beauty.jpg" alt="avatar">
-            </div>
-            <div class="relative">
-              <img class="avatar" src="./assets/images/beauty.jpg" alt="avatar">
-            </div>
-            <div>
-              <img class="avatar-sm" src="./assets/images/beauty.jpg" alt="avatar">
-            </div>
-            <div class="relative">
-              <img class="avatar-xs" src="./assets/images/beauty.jpg" alt="avatar">
-            </div>
-          </div>
-        </div>
-        <div class="col-6">
-          <div class="space-between align-center">
-            <div class="placeholder-xl">
-              SU
-            </div>
-            <div class="placeholder-lg">
-              SU
-            </div>
-            <div class="placeholder-md">
-              SU
-            </div>
-            <div class="placeholder">
-              SU
-            </div>
-            <div class="placeholder-sm">
-              SU
-            </div>
-            <div class="placeholder-xs">
-              SU
-            </div>
-          </div>
-        </div>
-      </div>
-      <h4 class="py-40">Buttons</h4>
-      <div class="columns">
-        <div class="col-3">
-          <p>Default Button</p>
-
-          <div class="space-between">
-            <button class="button button-default">Button</button>
-            <button class="button">Button</button>
-          </div>
-        </div>
-        <div class="col-3">
-          <p>Button Rectangle</p>
-          <div class="space-between">
-            <button class="button button-rectangle button-dark">Button</button>
-            <button class="button button-rectangle button-dark">Button</button>
-          </div>
-        </div>
-        <div class="col-3">
-          <p>Button Rounded</p>
-          <div class="space-between">
-            <button class="button button-rounded button-dark">Button</button>
-            <button class="button button-rounded button-dark">Button</button>
-          </div>
-        </div>
-        <div class="col-3">
-          <p>Button Outline</p>
-          <div class="space-between">
-            <button class="button button-rounded button-outline">Button</button>
-            <button class="button button-rounded button-outline">Button</button>
-          </div>
-          <div class="space-between mt-10">
-            <button class="button button-rounded button-outline">Button</button>
-            <button class="button button-rounded button-outline">Button</button>
-          </div>
-        </div>
-      </div>
-    </section>
     <section>
-      <div class="container">
-        <h3 class="pt-40 pb-10">Form inputs and select/dropdowns</h3>
+      <div class="container-fluid">
         <div class="columns">
-          <div class="col-4">
-            <form class="form">
-              <div class="input-control">
-                <label class="label">First Name</label>
-                <input class="input-field" type="text" placeholder="First Name">
-              </div>
-              <div class="input-control">
-                <label class="label">Last Name</label>
-                <input class="input-field" type="text" placeholder="Last Name">
-              </div>
-              <div class="input-control">
-                <label class="label">Email</label>
-                <input class="input-field" type="email" placeholder="Email">
-              </div>
-              <div class="input-control">
-                <label class="label">Password</label>
-                <input class="input-field" type="password" placeholder="Password">
-              </div>
-              <div class="input-control">
-                <label class="label">Textarea</label>
-                <textarea class="input-field textarea" rows="6" placeholder="Write Some here...."></textarea>
-              </div>
-              <button type="button" class="button button-rounded button-dark">Button</button>
-            </form>
-          </div>
-          <div class="col-4">
-            <form class="form">
-              <div class="input-control">
-                <label class="label">This is ReadOnly</label>
-                <input class="input-field" type="text" placeholder="ReadOnly values here" readonly>
-              </div>
-              <div class="input-control">
-                <label class="label">This is a disabled input field</label>
-                <input class="input-field" type="text" placeholder="This is a disabled input field" disabled>
-              </div>
-              <div class="input-control">
-                <label class="label">Email</label>
-                <input class="input-field" type="email" placeholder="Email">
-              </div>
-              <div class="input-control">
-                <label class="label">Password</label>
-                <input class="input-field" type="password" placeholder="Password">
-              </div>
-              <button type="button" class="button button-rounded button-dark">Button</button>
-            </form>
-          </div>
-          <div class="col-4">
-            <form class="form">
-              <div class="input-control has-icon">
-                <label class="label">Form fields with Icon</label>
-                <input class="input-field" type="text" placeholder="With icons and icons">
-                <div class="icon-left">
-                  <svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M17 19V17C17 15.9391 16.5786 14.9217 15.8284 14.1716C15.0783 13.4214 14.0609 13 13 13H5C3.93913 13 2.92172 13.4214 2.17157 14.1716C1.42143 14.9217 1 15.9391 1 17V19"
-                      stroke="black" stroke-linecap="round" stroke-linejoin="round" />
-                    <path d="M9 9C11.2091 9 13 7.20914 13 5C13 2.79086 11.2091 1 9 1C6.79086 1 5 2.79086 5 5C5 7.20914 6.79086 9 9 9Z"
-                      stroke="black" stroke-linecap="round" stroke-linejoin="round" />
-                  </svg>
-                </div>
-              </div>
-              <div class="input-control has-icon">
-                <label class="label">This is a disabled input field</label>
-                <input class="input-field" type="text" placeholder="This is a disabled input field" disabled>
-                <div class="icon-left">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M10.66 5H14C14.5304 5 15.0391 5.21071 15.4142 5.58579C15.7893 5.96086 16 6.46957 16 7V10.34L17 11.34L23 7V17M16 16V17C16 17.5304 15.7893 18.0391 15.4142 18.4142C15.0391 18.7893 14.5304 19 14 19H3C2.46957 19 1.96086 18.7893 1.58579 18.4142C1.21071 18.0391 1 17.5304 1 17V7C1 6.46957 1.21071 5.96086 1.58579 5.58579C1.96086 5.21071 2.46957 5 3 5H5L16 16Z"
-                      stroke="black" stroke-linecap="round" stroke-linejoin="round" />
-                    <path d="M1 1L23 23" stroke="black" stroke-linecap="round" stroke-linejoin="round" />
-                  </svg>
-
-                </div>
-              </div>
-              <div class="input-control has-icon">
-                <label class="label">Email</label>
-                <input class="input-field" type="email" placeholder="Email">
-                <div class="icon-left">
-                  <svg width="20" height="24" viewBox="0 0 20 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M19 10C19 17 10 23 10 23C10 23 1 17 1 10C1 7.61305 1.94821 5.32387 3.63604 3.63604C5.32387 1.94821 7.61305 1 10 1C12.3869 1 14.6761 1.94821 16.364 3.63604C18.0518 5.32387 19 7.61305 19 10Z"
-                      stroke="black" stroke-linecap="round" stroke-linejoin="round" />
-                    <path d="M10 13C11.6569 13 13 11.6569 13 10C13 8.34315 11.6569 7 10 7C8.34315 7 7 8.34315 7 10C7 11.6569 8.34315 13 10 13Z"
-                      stroke="black" stroke-linecap="round" stroke-linejoin="round" />
-                  </svg>
-                </div>
-              </div>
-              <div class="input-control has-icon">
-                <label class="label">Password</label>
-                <input class="input-field" type="password" placeholder="Password">
-                <div class="icon-left">
-                  <svg width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M17 10H3C1.89543 10 1 10.8954 1 12V19C1 20.1046 1.89543 21 3 21H17C18.1046 21 19 20.1046 19 19V12C19 10.8954 18.1046 10 17 10Z"
-                      stroke="black" stroke-linecap="round" stroke-linejoin="round" />
-                    <path d="M5 10V6C5 4.67392 5.52678 3.40215 6.46447 2.46447C7.40215 1.52678 8.67392 1 10 1C11.3261 1 12.5979 1.52678 13.5355 2.46447C14.4732 3.40215 15 4.67392 15 6V10"
-                      stroke="black" stroke-linecap="round" stroke-linejoin="round" />
-                  </svg>
-
-                </div>
-              </div>
-              <button type="button" class="button button-rounded button-dark">Button</button>
-            </form>
-          </div>
-        </div>
-        <div class="columns">
-          <div class="col-3">
-            <div class="flames-select has-icon">
-              <input class="input-field" type="text" placeholder="Select your hero">
-              <div class="icon-right">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M18 15L12 9L6 15" stroke="#777777" stroke-linecap="round" stroke-linejoin="round" />
-                </svg>
-              </div>
-              <ul class="select-item">
-                <li class="item">React, Vuejs and Angular</li>
-                <li class="item">Bootstrap and Bulma</li>
-                <li class="item">Invision, Figma and Sketch</li>
+          <div class="col-3 sidebar">
+            <div class="sidebar-item mt-60">
+              <h4>Typography</h4>
+              <ul class="sidebar-child">
+                <li><a href="#">All about Typography</a></li>
+              </ul>
+            </div>
+            <div class="sidebar-item">
+              <h4>Components</h4>
+              <ul class="sidebar-child">
+                <li><a class="active" href="#">Forms</a></li>
+                <li><a href="#">Buttons</a></li>
+                <li><a href="#">Cards</a></li>
+                <li><a href="#">Alerts</a></li>
+                <li><a href="#">Nav</a></li>
+                <li><a href="#">Modal</a></li>
+                <li><a href="#">Checkboxes</a></li>
+                <li><a href="#">Avatar</a></li>
+                <li><a href="#">Tooltips</a></li>
+                <li><a href="#">Accordions</a></li>
+                <li><a href="#">Custom Select</a></li>
+                <li><a href="#">Radio Buttons</a></li>
               </ul>
             </div>
           </div>
-          <div class="col-3">
-            <div class="flames-select has-icon">
-              <input class="input-field" type="text" placeholder="Select your hero">
-              <div class="icon-right">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M18 15L12 9L6 15" stroke="#777777" stroke-linecap="round" stroke-linejoin="round" />
-                </svg>
+          <div class="col-9 main">
+            <section class="container-fluid">
+              <h1 class="pt-40">Typography</h1>
+              <div class="columns pt-30">
+                <div class="col-2">
+                  <h4>Heading 1</h4>
+                </div>
+                <div class="col-10">
+                  <h1>The quick brown fox jumps over a lazy dog </h1>
+                </div>
               </div>
-              <ul class="select-item active">
-                <li class="item">React, Vuejs and Angular</li>
-                <li class="item">Bootstrap and Bulma</li>
-                <li class="item">Invision, Figma and Sketch</li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-3">
-            <div class="flames-select has-icon">
-              <input class="input-field" type="text" placeholder="Select your hero">
-              <div class="icon-right">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M18 15L12 9L6 15" stroke="#777777" stroke-linecap="round" stroke-linejoin="round" />
-                </svg>
+              <div class="columns pt-30">
+                <div class="col-2">
+                  <h4>Heading 2</h4>
+                </div>
+                <div class="col-10">
+                  <h2>The quick brown fox jumps over a lazy dog</h2>
+                </div>
               </div>
-              <ul class="select-item">
-                <li class="item">React, Vuejs and Angular</li>
-                <li class="item">Bootstrap and Bulma</li>
-                <li class="item">Invision, Figma and Sketch</li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-3">
-            <div class="flames-select has-icon">
-              <input class="input-field" type="text" placeholder="Select your hero">
-              <div class="icon-right">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M18 15L12 9L6 15" stroke="#777777" stroke-linecap="round" stroke-linejoin="round" />
-                </svg>
+              <div class="columns pt-30">
+                <div class="col-2">
+                  <h4>Heading 3</h4>
+                </div>
+                <div class="col-10">
+                  <h3>The quick brown fox jumps over a lazy dog</h3>
+                </div>
               </div>
-              <ul class="select-item active">
-                <li class="item">React, Vuejs and Angular</li>
-                <li class="item">Bootstrap and Bulma</li>
-                <li class="item">Invision, Figma and Sketch</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section>
-      <div class="container">
-        <h3 class="py-40">Cards</h3>
-        <div class="columns">
-          <div class="col-4">
-            <div class="card">
-              <div class="card-image">
-                <img src="./assets/images/beach.jpg" alt="" />
+              <div class="columns pt-30">
+                <div class="col-2">
+                  <h4>Heading 4</h4>
+                </div>
+                <div class="col-10">
+                  <h4>The quick brown fox jumps over a lazy dog</h4>
+                </div>
               </div>
-              <div class="card-content">
-                <span class="card-title">This card is environmentally friendly</span>
-                <p class="card-description">Guess pictures don't lie, you can see it for yourself. You can relate</p>
-                <div class="card-footer">
-                  <div class="card-footer-left">
-                    <div class="flex-start align-center">
-                      <div>
-                        <img class="avatar-md" src="./assets/images/beauty.jpg" alt="user" />
+              <div class="columns pt-30">
+                <div class="col-2">
+                  <h5>Heading 5</h5>
+                </div>
+                <div class="col-10">
+                  <h5>The quick brown fox jumps over a lazy dog</h5>
+                </div>
+              </div>
+              <div class="columns pt-30">
+                <div class="col-2">
+                  <h6>Heading 6</h6>
+                </div>
+                <div class="col-10">
+                  <h6>The quick brown fox jumps over a lazy dog</h6>
+                </div>
+              </div>
+            </section>
+            <section class="container-fluid">
+              <h1>Components</h1>
+              <p>Buttons, avatars, images, cards</p>
+              <h4 class="pb-30">Avatars and Placeholders</h4>
+              <div class="columns">
+                <div class="col-6">
+                  <div class="space-between align-center">
+                    <div class="relative align-center">
+                      <img class="avatar-xl" src="./assets/images/beauty.jpg" alt="avatar">
+                    </div>
+                    <div class="relative align-center">
+                      <img class="avatar-lg" src="./assets/images/beauty.jpg" alt="avatar">
+                    </div>
+                    <div class="align-center">
+                      <img class="avatar-md" src="./assets/images/beauty.jpg" alt="avatar">
+                    </div>
+                    <div class="relative">
+                      <img class="avatar" src="./assets/images/beauty.jpg" alt="avatar">
+                    </div>
+                    <div>
+                      <img class="avatar-sm" src="./assets/images/beauty.jpg" alt="avatar">
+                    </div>
+                    <div class="relative">
+                      <img class="avatar-xs" src="./assets/images/beauty.jpg" alt="avatar">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="space-between align-center">
+                    <div class="placeholder-xl">
+                      SU
+                    </div>
+                    <div class="placeholder-lg">
+                      SU
+                    </div>
+                    <div class="placeholder-md">
+                      SU
+                    </div>
+                    <div class="placeholder">
+                      SU
+                    </div>
+                    <div class="placeholder-sm">
+                      SU
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+              <h4 class="py-40">Buttons</h4>
+              <div class="columns">
+                <div class="col-3">
+                  <p>Default Button</p>
+            
+                  <div class="space-between">
+                    <button class="button button-default">Button</button>
+                    <button class="button">Button</button>
+                  </div>
+                </div>
+                <div class="col-3">
+                  <p>Button Rectangle</p>
+                  <div class="space-between">
+                    <button class="button button-rectangle button-dark">Button</button>
+                    <button class="button button-rectangle button-dark">Button</button>
+                  </div>
+                </div>
+                <div class="col-3">
+                  <p>Button Rounded</p>
+                  <div class="space-between">
+                    <button class="button button-rounded button-dark">Button</button>
+                    <button class="button button-rounded button-dark">Button</button>
+                  </div>
+                </div>
+                <div class="col-3">
+                  <p>Button Outline</p>
+                  <div class="space-between">
+                    <button class="button button-rounded button-outline">Button</button>
+                    <button class="button button-rounded button-outline">Button</button>
+                  </div>
+                  <div class="space-between mt-10">
+                    <button class="button button-rounded button-outline">Button</button>
+                    <button class="button button-rounded button-outline">Button</button>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section>
+              <div class="container-fluid">
+                <h3 class="pt-40 pb-10">Form inputs and select/dropdowns</h3>
+                <div class="columns">
+                  <div class="col-4">
+                    <form class="form">
+                      <div class="input-control">
+                        <label class="label">First Name</label>
+                        <input class="input-field" type="text" placeholder="First Name">
                       </div>
-                      <div class="pl-10">
-                        <A href="#" class="fs-14">Sullivan Wisdom</a>
-                        <div class="fs-11 mt--5">Designer</div>
+                      <div class="input-control">
+                        <label class="label">Last Name</label>
+                        <input class="input-field" type="text" placeholder="Last Name">
+                      </div>
+                      <div class="input-control">
+                        <label class="label">Email</label>
+                        <input class="input-field" type="email" placeholder="Email">
+                      </div>
+                      <div class="input-control">
+                        <label class="label">Password</label>
+                        <input class="input-field" type="password" placeholder="Password">
+                      </div>
+                      <div class="input-control">
+                        <label class="label">Textarea</label>
+                        <textarea class="input-field textarea" rows="6" placeholder="Write Some here...."></textarea>
+                      </div>
+                      <button type="button" class="button button-rounded button-dark">Button</button>
+                    </form>
+                  </div>
+                  <div class="col-4">
+                    <form class="form">
+                      <div class="input-control">
+                        <label class="label">This is ReadOnly</label>
+                        <input class="input-field" type="text" placeholder="ReadOnly values here" readonly>
+                      </div>
+                      <div class="input-control">
+                        <label class="label">This is a disabled input field</label>
+                        <input class="input-field" type="text" placeholder="This is a disabled input field" disabled>
+                      </div>
+                      <div class="input-control">
+                        <label class="label">Email</label>
+                        <input class="input-field" type="email" placeholder="Email">
+                      </div>
+                      <div class="input-control">
+                        <label class="label">Password</label>
+                        <input class="input-field" type="password" placeholder="Password">
+                      </div>
+                      <button type="button" class="button button-rounded button-dark">Button</button>
+                    </form>
+                  </div>
+                  <div class="col-4">
+                    <form class="form">
+                      <div class="input-control has-icon">
+                        <label class="label">Form fields with Icon</label>
+                        <input class="input-field" type="text" placeholder="With icons and icons">
+                        <div class="icon-left">
+                          <svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17 19V17C17 15.9391 16.5786 14.9217 15.8284 14.1716C15.0783 13.4214 14.0609 13 13 13H5C3.93913 13 2.92172 13.4214 2.17157 14.1716C1.42143 14.9217 1 15.9391 1 17V19"
+                              stroke="black" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M9 9C11.2091 9 13 7.20914 13 5C13 2.79086 11.2091 1 9 1C6.79086 1 5 2.79086 5 5C5 7.20914 6.79086 9 9 9Z"
+                              stroke="black" stroke-linecap="round" stroke-linejoin="round" />
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="input-control has-icon">
+                        <label class="label">This is a disabled input field</label>
+                        <input class="input-field" type="text" placeholder="This is a disabled input field" disabled>
+                        <div class="icon-left">
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.66 5H14C14.5304 5 15.0391 5.21071 15.4142 5.58579C15.7893 5.96086 16 6.46957 16 7V10.34L17 11.34L23 7V17M16 16V17C16 17.5304 15.7893 18.0391 15.4142 18.4142C15.0391 18.7893 14.5304 19 14 19H3C2.46957 19 1.96086 18.7893 1.58579 18.4142C1.21071 18.0391 1 17.5304 1 17V7C1 6.46957 1.21071 5.96086 1.58579 5.58579C1.96086 5.21071 2.46957 5 3 5H5L16 16Z"
+                              stroke="black" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M1 1L23 23" stroke="black" stroke-linecap="round" stroke-linejoin="round" />
+                          </svg>
+            
+                        </div>
+                      </div>
+                      <div class="input-control has-icon">
+                        <label class="label">Email</label>
+                        <input class="input-field" type="email" placeholder="Email">
+                        <div class="icon-left">
+                          <svg width="20" height="24" viewBox="0 0 20 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19 10C19 17 10 23 10 23C10 23 1 17 1 10C1 7.61305 1.94821 5.32387 3.63604 3.63604C5.32387 1.94821 7.61305 1 10 1C12.3869 1 14.6761 1.94821 16.364 3.63604C18.0518 5.32387 19 7.61305 19 10Z"
+                              stroke="black" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M10 13C11.6569 13 13 11.6569 13 10C13 8.34315 11.6569 7 10 7C8.34315 7 7 8.34315 7 10C7 11.6569 8.34315 13 10 13Z"
+                              stroke="black" stroke-linecap="round" stroke-linejoin="round" />
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="input-control has-icon">
+                        <label class="label">Password</label>
+                        <input class="input-field" type="password" placeholder="Password">
+                        <div class="icon-left">
+                          <svg width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17 10H3C1.89543 10 1 10.8954 1 12V19C1 20.1046 1.89543 21 3 21H17C18.1046 21 19 20.1046 19 19V12C19 10.8954 18.1046 10 17 10Z"
+                              stroke="black" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M5 10V6C5 4.67392 5.52678 3.40215 6.46447 2.46447C7.40215 1.52678 8.67392 1 10 1C11.3261 1 12.5979 1.52678 13.5355 2.46447C14.4732 3.40215 15 4.67392 15 6V10"
+                              stroke="black" stroke-linecap="round" stroke-linejoin="round" />
+                          </svg>
+            
+                        </div>
+                      </div>
+                      <button type="button" class="button button-rounded button-dark">Button</button>
+                    </form>
+                  </div>
+                </div>
+                <div class="columns">
+                  <div class="col-3">
+                    <div class="flames-select has-icon">
+                      <input class="input-field" type="text" placeholder="Select your hero">
+                      <div class="icon-right">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M18 15L12 9L6 15" stroke="#777777" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                      </div>
+                      <ul class="select-item">
+                        <li class="item">React, Vuejs and Angular</li>
+                        <li class="item">Bootstrap and Bulma</li>
+                        <li class="item">Invision, Figma and Sketch</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="flames-select has-icon">
+                      <input class="input-field" type="text" placeholder="Select your hero">
+                      <div class="icon-right">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M18 15L12 9L6 15" stroke="#777777" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                      </div>
+                      <ul class="select-item active">
+                        <li class="item">React, Vuejs and Angular</li>
+                        <li class="item">Bootstrap and Bulma</li>
+                        <li class="item">Invision, Figma and Sketch</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="flames-select has-icon">
+                      <input class="input-field" type="text" placeholder="Select your hero">
+                      <div class="icon-right">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M18 15L12 9L6 15" stroke="#777777" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                      </div>
+                      <ul class="select-item">
+                        <li class="item">React, Vuejs and Angular</li>
+                        <li class="item">Bootstrap and Bulma</li>
+                        <li class="item">Invision, Figma and Sketch</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="flames-select has-icon">
+                      <input class="input-field" type="text" placeholder="Select your hero">
+                      <div class="icon-right">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M18 15L12 9L6 15" stroke="#777777" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                      </div>
+                      <ul class="select-item active">
+                        <li class="item">React, Vuejs and Angular</li>
+                        <li class="item">Bootstrap and Bulma</li>
+                        <li class="item">Invision, Figma and Sketch</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section>
+              <div class="container-fluid">
+                <h3 class="py-40">Cards</h3>
+                <div class="columns">
+                  <div class="col-4">
+                    <div class="card">
+                      <div class="card-image">
+                        <img src="./assets/images/beach.jpg" alt="" />
+                      </div>
+                      <div class="card-content">
+                        <span class="card-title">This card is environmentally friendly</span>
+                        <p class="card-description">Guess pictures don't lie, you can see it for yourself. You can relate</p>
+                        <div class="card-footer">
+                          <div class="card-footer-left">
+                            <div class="flex-start align-center">
+                              <div>
+                                <img class="avatar-md" src="./assets/images/beauty.jpg" alt="user" />
+                              </div>
+                              <div class="pl-10">
+                                <A href="#" class="fs-14">Sullivan Wisdom</a>
+                                <div class="fs-11 mt--5">Designer</div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="card-footer-left"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <!--end card-->
+            
+                  </div>
+                  <div class="col-4">
+                    <div class="card">
+                      <div class="card-image">
+                        <img src="./assets/images/landscape.jpg" alt="" />
+                      </div>
+                      <div class="card-content">
+                        <span class="card-title">This card is environmentally friendly</span>
+                        <p class="card-description">Guess pictures don't lie, you can see it for yourself. You can relate</p>
+                        <div class="card-footer">
+                          <div class="card-footer-left">
+                            <div class="flex-start align-center">
+                              <div>
+                                <img class="avatar-md" src="./assets/images/beauty.jpg" alt="user" />
+                              </div>
+                              <div class="pl-10">
+                                <A href="#" class="fs-14">Sullivan Wisdom</a>
+                                <div class="fs-11 mt--5">Designer</div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="card-footer-left"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <!--end card-->
+            
+                  </div>
+                  <div class="col-4">
+                    <div class="card">
+                      <div class="card-image">
+                        <img src="./assets/images/beauty.jpg" alt="" />
+                      </div>
+                      <div class="card-content">
+                        <span class="card-title">This card is environmentally friendly</span>
+                        <p class="card-description">Guess pictures don't lie, you can see it for yourself. You can relate</p>
+                        <div class="card-footer">
+                          <div class="card-footer-left">
+                            <div class="flex-start align-center">
+                              <div>
+                                <img class="avatar-md" src="./assets/images/beauty.jpg" alt="user" />
+                              </div>
+                              <div class="pl-10">
+                                <A href="#" class="fs-14">Sullivan Wisdom</a>
+                                <div class="fs-11 mt--5">Designer</div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="card-footer-left"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <!--end card-->
+            
+                  </div>
+                </div>
+                <div class="columns">
+                  <div class="col-3">
+                    <div class="clipcard">
+                      <img class="clipcard-image" src="./assets/images/bird.jpg" alt="landscape" />
+                      <div class="clipcard-body">Focus point</div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="wavecard">
+                      <img class="wavecard-image" src="./assets/images/landscape.jpg" alt="landscape" />
+                      <div class="wavecard-body">Ocean wave</div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="clipcard">
+                      <img class="clipcard-image" src="./assets/images/alti.jpg" alt="landscape" />
+                      <div class="clipcard-body">Point of focus</div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="wavecard">
+                      <img class="wavecard-image" src="./assets/images/dawn.jpg" alt="landscape" />
+                      <div class="wavecard-body">Wavy angles</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="columns">
+                  <div class="col-6">
+                    <div class="rectcard">
+                      <img class="rectcard-image" src="./assets/images/dawn.jpg" alt="dawn">
+                      <div class="rectcard-content">
+                        <div class="rectcard-title">This card is dope</div>
+                        <div class="rectcard-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum, libero?</div>
+                        <div class="user-details flex-start align-center">
+                          <div>
+                            <img class="avatar-md" src="./assets/images/beauty.jpg" alt="user" />
+                          </div>
+                          <div class="pl-10">
+                            <A href="#" class="fs-14">Sullivan Wisdom</a>
+                            <div class="fs-11 mt--5">Designer</div>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
-                  <div class="card-footer-left"></div>
-                </div>
-              </div>
-            </div>
-            <!--end card-->
-
-          </div>
-          <div class="col-4">
-            <div class="card">
-              <div class="card-image">
-                <img src="./assets/images/landscape.jpg" alt="" />
-              </div>
-              <div class="card-content">
-                <span class="card-title">This card is environmentally friendly</span>
-                <p class="card-description">Guess pictures don't lie, you can see it for yourself. You can relate</p>
-                <div class="card-footer">
-                  <div class="card-footer-left">
-                    <div class="flex-start align-center">
-                      <div>
-                        <img class="avatar-md" src="./assets/images/beauty.jpg" alt="user" />
-                      </div>
-                      <div class="pl-10">
-                        <A href="#" class="fs-14">Sullivan Wisdom</a>
-                        <div class="fs-11 mt--5">Designer</div>
+                  <div class="col-6">
+                    <div class="rectcard">
+                      <img class="rectcard-image" src="./assets/images/dawn.jpg" alt="dawn">
+                      <div class="rectcard-content">
+                        <div class="rectcard-title">This card is dope</div>
+                        <div class="rectcard-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum, libero?</div>
+                        <div class="user-details flex-start align-center">
+                          <div>
+                            <img class="avatar-md" src="./assets/images/beauty.jpg" alt="user" />
+                          </div>
+                          <div class="pl-10">
+                            <A href="#" class="fs-14">Sullivan Wisdom</a>
+                            <div class="fs-11 mt--5">Designer</div>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
-                  <div class="card-footer-left"></div>
                 </div>
               </div>
-            </div>
-            <!--end card-->
-
-          </div>
-          <div class="col-4">
-            <div class="card">
-              <div class="card-image">
-                <img src="./assets/images/beauty.jpg" alt="" />
+            </section>
+            <section>
+              <div class="container-fluid">
+                <h3 class="py-40">Accordions</h3>
+                <div class="columns">
+                  <div class="col-4">
+                    <div class="accordion-container">
+                      <div class="accordion">
+                        <div class="accordion-header">
+                          <div class="accordion-item">One minute you're the hero</div>
+                          <div class="accordion-icon">
+                            <svg class="arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M6 9L12 15L18 9" stroke="#fff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                          </div>
+                        </div>
+                        <!--end accordion header-->
+                        <div class="accordion-content">
+                          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat animi odit ullam quis, nobis
+                            magni omnis
+                            deleniti
+                            qui sed reiciendis officiis illum aut veritatis maiores harum reprehenderit mollitia accusantium
+                            praesentium.</p>
+                        </div>
+                      </div><!-- end header -->
+                      <div class="accordion">
+                        <div class="accordion-header">
+                          <div class="accordion-item">One minute you're the hero</div>
+                          <div class="accordion-icon">
+                            <svg class="arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M6 9L12 15L18 9" stroke="#fff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                          </div>
+                        </div>
+                        <!--end accordion header-->
+                        <div class="accordion-content">
+                          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat animi odit ullam quis, nobis
+                            magni omnis
+                            deleniti
+                            qui sed reiciendis officiis illum aut veritatis maiores harum reprehenderit mollitia accusantium
+                            praesentium.</p>
+                        </div>
+            
+                      </div><!-- end accordion -->
+                      <div class="accordion">
+                        <div class="accordion-header">
+                          <div class="accordion-item">One minute you're the hero</div>
+                          <div class="accordion-icon">
+                            <svg class="arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M6 9L12 15L18 9" stroke="#fff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                          </div>
+                        </div>
+                        <!--end accordion header-->
+                        <div class="accordion-content">
+                          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat animi odit ullam quis, nobis
+                            magni omnis
+                            deleniti
+                            qui sed reiciendis officiis illum aut veritatis maiores harum reprehenderit mollitia accusantium
+                            praesentium.</p>
+                        </div>
+            
+                      </div><!-- end accordion -->
+                    </div>
+                  </div>
+                  <div class="col-4">
+                    <div class="accordion-container">
+                      <div class="accordion">
+                        <div class="accordion-header">
+                          <div class="accordion-item">One minute you're the hero</div>
+                          <div class="accordion-icon">
+                            <svg class="arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M6 9L12 15L18 9" stroke="#fff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                          </div>
+                        </div>
+                        <!--end accordion header-->
+                        <div class="accordion-content">
+                          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat animi odit ullam quis, nobis
+                            magni omnis
+                            deleniti
+                            qui sed reiciendis officiis illum aut veritatis maiores harum reprehenderit mollitia accusantium
+                            praesentium.</p>
+                        </div>
+            
+                      </div><!-- end accordion -->
+                      <div class="accordion">
+                        <div class="accordion-header">
+                          <div class="accordion-item">One minute you're the hero</div>
+                          <div class="accordion-icon">
+                            <svg class="arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M6 9L12 15L18 9" stroke="#fff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                          </div>
+                        </div>
+                        <!--end accordion header-->
+                        <div class="accordion-content">
+                          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat animi odit ullam quis, nobis
+                            magni omnis
+                            deleniti
+                            qui sed reiciendis officiis illum aut veritatis maiores harum reprehenderit mollitia accusantium
+                            praesentium.</p>
+                        </div>
+            
+                      </div><!-- end accordion -->
+                      <div class="accordion">
+                        <div class="accordion-header">
+                          <div class="accordion-item">One minute you're the hero</div>
+                          <div class="accordion-icon">
+                            <svg class="arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M6 9L12 15L18 9" stroke="#fff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                          </div>
+                        </div>
+                        <!--end accordion header-->
+                        <div class="accordion-content">
+                          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat animi odit ullam quis, nobis
+                            magni omnis
+                            deleniti
+                            qui sed reiciendis officiis illum aut veritatis maiores harum reprehenderit mollitia accusantium
+                            praesentium.</p>
+                        </div>
+            
+                      </div><!-- end accordion -->
+                    </div>
+                  </div>
+                  <div class="col-4">
+                    <div class="accordion-container">
+                      <div class="accordion">
+                        <div class="accordion-header">
+                          <div class="accordion-item">One minute you're the hero</div>
+                          <div class="accordion-icon">
+                            <svg class="arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M6 9L12 15L18 9" stroke="#fff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                          </div>
+                        </div>
+                        <!--end accordion header-->
+                        <div class="accordion-content">
+                          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat animi odit ullam quis, nobis
+                            magni omnis
+                            deleniti
+                            qui sed reiciendis officiis illum aut veritatis maiores harum reprehenderit mollitia accusantium
+                            praesentium.</p>
+                        </div>
+                      </div><!-- end header -->
+                      <div class="accordion">
+                        <div class="accordion-header">
+                          <div class="accordion-item">One minute you're the hero</div>
+                          <div class="accordion-icon">
+                            <svg class="arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M6 9L12 15L18 9" stroke="#fff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                          </div>
+                        </div>
+                        <!--end accordion header-->
+                        <div class="accordion-content">
+                          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat animi odit ullam quis, nobis
+                            magni omnis
+                            deleniti
+                            qui sed reiciendis officiis illum aut veritatis maiores harum reprehenderit mollitia accusantium
+                            praesentium.</p>
+                        </div>
+            
+                      </div><!-- end accordion -->
+                      <div class="accordion">
+                        <div class="accordion-header">
+                          <div class="accordion-item">One minute you're the hero</div>
+                          <div class="accordion-icon">
+                            <svg class="arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M6 9L12 15L18 9" stroke="#fff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                          </div>
+                        </div>
+                        <!--end accordion header-->
+                        <div class="accordion-content">
+                          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat animi odit ullam quis, nobis
+                            magni omnis
+                            deleniti
+                            qui sed reiciendis officiis illum aut veritatis maiores harum reprehenderit mollitia accusantium
+                            praesentium.</p>
+                        </div>
+            
+                      </div><!-- end accordion -->
+                    </div>
+                  </div>
+                </div>
+                <div class="columns">
+                  <div class="col-6">
+                    <div class="accordion-container">
+                      <div class="accordion">
+                        <div class="accordion-header">
+                          <div class="accordion-title">One minute you're the hero</div>
+                          <div class="accordion-icon">
+                            <svg class="arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M6 9L12 15L18 9" stroke="#fff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                          </div>
+                        </div>
+                        <!--end accordion header-->
+                        <div class="accordion-content">
+                          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat animi odit ullam quis, nobis
+                            magni omnis deleniti
+                            qui sed reiciendis officiis illum aut veritatis maiores harum reprehenderit mollitia accusantium
+                            praesentium.</p>
+                        </div>
+                      </div><!-- end header -->
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="accordion-container">
+                      <div class="accordion">
+                        <div class="accordion-header">
+                          <div class="accordion-item">One minute you're the hero</div>
+                          <div class="accordion-icon">
+                            <svg class="arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M6 9L12 15L18 9" stroke="#fff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                          </div>
+                        </div>
+                        <!--end accordion header-->
+                        <div class="accordion-content">
+                          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat animi odit ullam quis, nobis
+                            magni omnis
+                            deleniti
+                            qui sed reiciendis officiis illum aut veritatis maiores harum reprehenderit mollitia accusantium
+                            praesentium.</p>
+                        </div>
+                      </div><!-- end header -->
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="card-content">
-                <span class="card-title">This card is environmentally friendly</span>
-                <p class="card-description">Guess pictures don't lie, you can see it for yourself. You can relate</p>
-                <div class="card-footer">
-                  <div class="card-footer-left">
-                    <div class="flex-start align-center">
-                      <div>
-                        <img class="avatar-md" src="./assets/images/beauty.jpg" alt="user" />
+            </section>
+            <section>
+              <div class="container-fluid">
+                <h3 class="py-40">Tooltips</h3>
+                <div class="columns">
+                  <div class="col-3">
+                    <div class="tooltip">
+                      top tooltip
+                      <div class="tooltip-text tooltip-top">Brilliance is evenly distributed? seriously? hmmmm</div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="tooltip">
+                      top tooltip
+                      <div class="tooltip-text tooltip-bottom">Brilliance is evenly distributed? seriously? hmmmm</div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="tooltip">
+                      top tooltip
+                      <div class="tooltip-text tooltip-bottom">Brilliance is evenly distributed? seriously? hmmmm</div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="tooltip">
+                      top tooltip
+                      <div class="tooltip-text tooltip-bottom">Brilliance is evenly distributed? seriously? hmmmm</div>
+                    </div>
+                  </div>
+                </div>
+            </section>
+            <section>
+              <div class="container-fluid">
+                <h3 class="py-40">Alerts</h3>
+                <div class="columns">
+                  <div class="col-6">
+                    <div class="alert alert-success">
+                      <div class="alert-content">
+                        <div class="alert-icon">
+                          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13.3333 4L6 11.3333L2.66667 8" stroke="white" stroke-width="2" stroke-linecap="round"
+                              stroke-linejoin="round" />
+                          </svg>
+                        </div>
+                        <span class="emoji2 happy"></span>
+                        <div class="alert-message">Congrats! You successfully screwed up</div>
                       </div>
-                      <div class="pl-10">
-                        <A href="#" class="fs-14">Sullivan Wisdom</a>
-                        <div class="fs-11 mt--5">Designer</div>
+                      <div class="dismiss-btn">
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M13 1L1 13" stroke="#C4C4C4" stroke-linecap="round" stroke-linejoin="round" />
+                          <path d="M1 1L13 13" stroke="#C4C4C4" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
                       </div>
                     </div>
                   </div>
-                  <div class="card-footer-left"></div>
+                  <div class="col-6 slideIn" id="pos-absolute">
+                    <div class="alert alert-info">
+                      <div class="alert-content">
+                        <div class="alert-icon">
+                          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13.3333 4L6 11.3333L2.66667 8" stroke="white" stroke-width="2" stroke-linecap="round"
+                              stroke-linejoin="round" />
+                          </svg>
+                        </div>
+                        <span class="emoji2 info"></span>
+                        <div class="alert-message">Make sure you register.</div>
+                      </div>
+                      <div class="">
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M13 1L1 13" stroke="#C4C4C4" stroke-linecap="round" stroke-linejoin="round" />
+                          <path d="M1 1L13 13" stroke="#C4C4C4" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="columns">
+                  <div class="col-6">
+                    <div class="alert alert-warning">
+                      <div class="alert-content">
+                        <div class="alert-icon">
+                          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0)">
+                              <path d="M6.86 2.57347L1.21333 12.0001C1.09691 12.2018 1.03531 12.4303 1.03466 12.6631C1.03401 12.896 1.09433 13.1249 1.20962 13.3272C1.32491 13.5294 1.49115 13.698 1.6918 13.816C1.89246 13.9341 2.12053 13.9976 2.35333 14.0001H13.6467C13.8795 13.9976 14.1075 13.9341 14.3082 13.816C14.5088 13.698 14.6751 13.5294 14.7904 13.3272C14.9057 13.1249 14.966 12.896 14.9653 12.6631C14.9647 12.4303 14.9031 12.2018 14.7867 12.0001L9.14 2.57347C9.02115 2.37754 8.85381 2.21555 8.65413 2.10313C8.45445 1.9907 8.22916 1.93164 8 1.93164C7.77084 1.93164 7.54555 1.9907 7.34587 2.10313C7.14618 2.21555 6.97885 2.37754 6.86 2.57347V2.57347Z"
+                                stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                              <path d="M8 6V8.66667" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            </g>
+                            <defs>
+                              <clipPath id="clip0">
+                                <rect width="16" height="16" fill="white" />
+                              </clipPath>
+                            </defs>
+                          </svg>
+            
+                        </div>
+                        <span class="emoji2 warning"></span>
+                        <div class="alert-message">I'm warning you for the last time</div>
+                      </div>
+                      <div class="dismiss-btn">
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M13 1L1 13" stroke="#C4C4C4" stroke-linecap="round" stroke-linejoin="round" />
+                          <path d="M1 1L13 13" stroke="#C4C4C4" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="alert alert-danger">
+                      <div class="alert-content">
+                        <div class="alert-icon">
+                          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0)">
+                              <path d="M6.86 2.57347L1.21333 12.0001C1.09691 12.2018 1.03531 12.4303 1.03466 12.6631C1.03401 12.896 1.09433 13.1249 1.20962 13.3272C1.32491 13.5294 1.49115 13.698 1.6918 13.816C1.89246 13.9341 2.12053 13.9976 2.35333 14.0001H13.6467C13.8795 13.9976 14.1075 13.9341 14.3082 13.816C14.5088 13.698 14.6751 13.5294 14.7904 13.3272C14.9057 13.1249 14.966 12.896 14.9653 12.6631C14.9647 12.4303 14.9031 12.2018 14.7867 12.0001L9.14 2.57347C9.02115 2.37754 8.85381 2.21555 8.65413 2.10313C8.45445 1.9907 8.22916 1.93164 8 1.93164C7.77084 1.93164 7.54555 1.9907 7.34587 2.10313C7.14618 2.21555 6.97885 2.37754 6.86 2.57347V2.57347Z"
+                                stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                              <path d="M8 6V8.66667" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            </g>
+                            <defs>
+                              <clipPath id="clip0">
+                                <rect width="16" height="16" fill="white" />
+                              </clipPath>
+                            </defs>
+                          </svg>
+                        </div>
+                        <span class="emoji2 angry"></span>
+                        <div class="alert-message">That's not TIA!</div>
+                      </div>
+                      <div class="">
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M13 1L1 13" stroke="#C4C4C4" stroke-linecap="round" stroke-linejoin="round" />
+                          <path d="M1 1L13 13" stroke="#C4C4C4" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </section>
+            <section>
+              <div class="container-fluid">
+                <h3 class="py-40">Modal</h3>
+                <div class="columns">
+                  <div class="col-4">
+                    <button class="button button-andela shadow button-click" data-target="1">Click to see modal
+                    </button>
+                    <div class="modal" data-id="1">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          BRILLIANCE IS EVENLY DISTRIBUTED
+                          <span class="close-modal">
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M11 1L1 11" stroke="black" stroke-linecap="round" stroke-linejoin="round" />
+                              <path d="M1 1L11 11" stroke="black" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                          </span>
+                        </div>
+                        <div class="modal-body">
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus assumenda earum corrupti aperiam
+                          temporibus, illum vero tempora? Quae, possimus debitis?
+                        </div>
+                        <div class="modal-footer">
+                          <div class="flex-end">
+                            <button class="button button-outline-dark">Proceed</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-4">
+                    <button class="button button-default button-click">Click to see modal</button>
+                    <div class="modal">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          THAT'S THE WAY IT IS
+                          <span class="close-modal">
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M11 1L1 11" stroke="black" stroke-linecap="round" stroke-linejoin="round" />
+                              <path d="M1 1L11 11" stroke="black" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                          </span>
+                        </div>
+                        <div class="modal-body">
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus assumenda earum corrupti aperiam
+                          temporibus,
+                          illum vero tempora? Quae, possimus debitis?
+                        </div>
+                        <div class="modal-footer">
+                          <div class="flex-start">
+                            <button class="button button-dark shadow">Proceed</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-4">
+                    <button class="button button-default button-click" data-target="2">Click to see modal
+                    </button>
+                    <div class="modal" data-id="2">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          Sullivan's hands are tied but not tied enough
+                          <span class="close-modal">
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M11 1L1 11" stroke="black" stroke-linecap="round" stroke-linejoin="round" />
+                              <path d="M1 1L11 11" stroke="black" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                          </span>
+                        </div>
+                        <div class="modal-body">
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus assumenda earum corrupti aperiam
+                          temporibus,
+                          illum vero tempora? Quae, possimus debitis?
+                        </div>
+                        <div class="modal-footer">
+                          <div class="flex-end">
+                            <button class="button mr-10">Cancel</button>
+                            <button class="button button-outline-dark">Proceed</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
-            <!--end card-->
-
-          </div>
-        </div>
-        <div class="columns">
-          <div class="col-3">
-            <div class="clipcard">
-              <img class="clipcard-image" src="./assets/images/bird.jpg" alt="landscape" />
-              <div class="clipcard-body">Focus point</div>
-            </div>
-          </div>
-          <div class="col-3">
-            <div class="wavecard">
-              <img class="wavecard-image" src="./assets/images/landscape.jpg" alt="landscape" />
-              <div class="wavecard-body">Ocean wave</div>
-            </div>
-          </div>
-          <div class="col-3">
-            <div class="clipcard">
-              <img class="clipcard-image" src="./assets/images/alti.jpg" alt="landscape" />
-              <div class="clipcard-body">Point of focus</div>
-            </div>
-          </div>
-          <div class="col-3">
-            <div class="wavecard">
-              <img class="wavecard-image" src="./assets/images/dawn.jpg" alt="landscape" />
-              <div class="wavecard-body">Wavy angles</div>
-            </div>
-          </div>
-        </div>
-        <div class="columns">
-          <div class="col-6">
-            <div class="rectcard">
-              <img class="rectcard-image" src="./assets/images/dawn.jpg" alt="dawn">
-              <div class="rectcard-content">
-                <div class="rectcard-title">This card is dope</div>
-                <div class="rectcard-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum, libero?</div>
-                <div class="user-details flex-start align-center">
-                  <div>
-                    <img class="avatar-md" src="./assets/images/beauty.jpg" alt="user" />
-                  </div>
-                  <div class="pl-10">
-                    <A href="#" class="fs-14">Sullivan Wisdom</a>
-                    <div class="fs-11 mt--5">Designer</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-6">
-            <div class="rectcard">
-              <img class="rectcard-image" src="./assets/images/dawn.jpg" alt="dawn">
-              <div class="rectcard-content">
-                <div class="rectcard-title">This card is dope</div>
-                <div class="rectcard-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum, libero?</div>
-                <div class="user-details flex-start align-center">
-                  <div>
-                    <img class="avatar-md" src="./assets/images/beauty.jpg" alt="user" />
-                  </div>
-                  <div class="pl-10">
-                    <A href="#" class="fs-14">Sullivan Wisdom</a>
-                    <div class="fs-11 mt--5">Designer</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-    </section>
-    <section>
-      <div class="container">
-        <h3 class="py-40">Accordions</h3>
-        <div class="columns">
-          <div class="col-4">
-            <div class="accordion-container">
-              <div class="accordion">
-                <div class="accordion-header">
-                  <div class="accordion-item">One minute you're the hero</div>
-                  <div class="accordion-icon">
-                    <svg class="arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M6 9L12 15L18 9" stroke="#fff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-                  </div>
-                </div>
-                <!--end accordion header-->
-                <div class="accordion-content">
-                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat animi odit ullam quis, nobis
-                    magni omnis
-                    deleniti
-                    qui sed reiciendis officiis illum aut veritatis maiores harum reprehenderit mollitia accusantium
-                    praesentium.</p>
-                </div>
-              </div><!-- end header -->
-              <div class="accordion">
-                <div class="accordion-header">
-                  <div class="accordion-item">One minute you're the hero</div>
-                  <div class="accordion-icon">
-                    <svg class="arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M6 9L12 15L18 9" stroke="#fff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-                  </div>
-                </div>
-                <!--end accordion header-->
-                <div class="accordion-content">
-                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat animi odit ullam quis, nobis
-                    magni omnis
-                    deleniti
-                    qui sed reiciendis officiis illum aut veritatis maiores harum reprehenderit mollitia accusantium
-                    praesentium.</p>
-                </div>
-
-              </div><!-- end accordion -->
-              <div class="accordion">
-                <div class="accordion-header">
-                  <div class="accordion-item">One minute you're the hero</div>
-                  <div class="accordion-icon">
-                    <svg class="arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M6 9L12 15L18 9" stroke="#fff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-                  </div>
-                </div>
-                <!--end accordion header-->
-                <div class="accordion-content">
-                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat animi odit ullam quis, nobis
-                    magni omnis
-                    deleniti
-                    qui sed reiciendis officiis illum aut veritatis maiores harum reprehenderit mollitia accusantium
-                    praesentium.</p>
-                </div>
-
-              </div><!-- end accordion -->
-            </div>
-          </div>
-          <div class="col-4">
-            <div class="accordion-container">
-              <div class="accordion">
-                <div class="accordion-header">
-                  <div class="accordion-item">One minute you're the hero</div>
-                  <div class="accordion-icon">
-                    <svg class="arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M6 9L12 15L18 9" stroke="#fff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-                  </div>
-                </div>
-                <!--end accordion header-->
-                <div class="accordion-content">
-                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat animi odit ullam quis, nobis
-                    magni omnis
-                    deleniti
-                    qui sed reiciendis officiis illum aut veritatis maiores harum reprehenderit mollitia accusantium
-                    praesentium.</p>
-                </div>
-
-              </div><!-- end accordion -->
-              <div class="accordion">
-                <div class="accordion-header">
-                  <div class="accordion-item">One minute you're the hero</div>
-                  <div class="accordion-icon">
-                    <svg class="arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M6 9L12 15L18 9" stroke="#fff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-                  </div>
-                </div>
-                <!--end accordion header-->
-                <div class="accordion-content">
-                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat animi odit ullam quis, nobis
-                    magni omnis
-                    deleniti
-                    qui sed reiciendis officiis illum aut veritatis maiores harum reprehenderit mollitia accusantium
-                    praesentium.</p>
-                </div>
-
-              </div><!-- end accordion -->
-              <div class="accordion">
-                <div class="accordion-header">
-                  <div class="accordion-item">One minute you're the hero</div>
-                  <div class="accordion-icon">
-                    <svg class="arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M6 9L12 15L18 9" stroke="#fff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-                  </div>
-                </div>
-                <!--end accordion header-->
-                <div class="accordion-content">
-                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat animi odit ullam quis, nobis
-                    magni omnis
-                    deleniti
-                    qui sed reiciendis officiis illum aut veritatis maiores harum reprehenderit mollitia accusantium
-                    praesentium.</p>
-                </div>
-
-              </div><!-- end accordion -->
-            </div>
-          </div>
-          <div class="col-4">
-            <div class="accordion-container">
-              <div class="accordion">
-                <div class="accordion-header">
-                  <div class="accordion-item">One minute you're the hero</div>
-                  <div class="accordion-icon">
-                    <svg class="arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M6 9L12 15L18 9" stroke="#fff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-                  </div>
-                </div>
-                <!--end accordion header-->
-                <div class="accordion-content">
-                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat animi odit ullam quis, nobis
-                    magni omnis
-                    deleniti
-                    qui sed reiciendis officiis illum aut veritatis maiores harum reprehenderit mollitia accusantium
-                    praesentium.</p>
-                </div>
-              </div><!-- end header -->
-              <div class="accordion">
-                <div class="accordion-header">
-                  <div class="accordion-item">One minute you're the hero</div>
-                  <div class="accordion-icon">
-                    <svg class="arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M6 9L12 15L18 9" stroke="#fff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-                  </div>
-                </div>
-                <!--end accordion header-->
-                <div class="accordion-content">
-                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat animi odit ullam quis, nobis
-                    magni omnis
-                    deleniti
-                    qui sed reiciendis officiis illum aut veritatis maiores harum reprehenderit mollitia accusantium
-                    praesentium.</p>
-                </div>
-
-              </div><!-- end accordion -->
-              <div class="accordion">
-                <div class="accordion-header">
-                  <div class="accordion-item">One minute you're the hero</div>
-                  <div class="accordion-icon">
-                    <svg class="arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M6 9L12 15L18 9" stroke="#fff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-                  </div>
-                </div>
-                <!--end accordion header-->
-                <div class="accordion-content">
-                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat animi odit ullam quis, nobis
-                    magni omnis
-                    deleniti
-                    qui sed reiciendis officiis illum aut veritatis maiores harum reprehenderit mollitia accusantium
-                    praesentium.</p>
-                </div>
-
-              </div><!-- end accordion -->
-            </div>
-          </div>
-        </div>
-        <div class="columns">
-          <div class="col-6">
-            <div class="accordion-container">
-              <div class="accordion">
-                <div class="accordion-header">
-                  <div class="accordion-title">One minute you're the hero</div>
-                  <div class="accordion-icon">
-                    <svg class="arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M6 9L12 15L18 9" stroke="#fff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-                  </div>
-                </div>
-                <!--end accordion header-->
-                <div class="accordion-content">
-                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat animi odit ullam quis, nobis
-                    magni omnis deleniti
-                    qui sed reiciendis officiis illum aut veritatis maiores harum reprehenderit mollitia accusantium
-                    praesentium.</p>
-                </div>
-              </div><!-- end header -->
-            </div>
-          </div>
-          <div class="col-6">
-            <div class="accordion-container">
-              <div class="accordion">
-                <div class="accordion-header">
-                  <div class="accordion-item">One minute you're the hero</div>
-                  <div class="accordion-icon">
-                    <svg class="arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M6 9L12 15L18 9" stroke="#fff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-                  </div>
-                </div>
-                <!--end accordion header-->
-                <div class="accordion-content">
-                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat animi odit ullam quis, nobis
-                    magni omnis
-                    deleniti
-                    qui sed reiciendis officiis illum aut veritatis maiores harum reprehenderit mollitia accusantium
-                    praesentium.</p>
-                </div>
-              </div><!-- end header -->
-            </div>
+            </section>
           </div>
         </div>
       </div>
     </section>
-    <section>
-      <div class="container">
-        <h3 class="py-40">Tooltips</h3>
-        <div class="columns">
-          <div class="col-3">
-            <div class="tooltip">
-              top tooltip
-              <div class="tooltip-text tooltip-top">Brilliance is evenly distributed? seriously? hmmmm</div>
-            </div>
-          </div>
-          <div class="col-3">
-            <div class="tooltip">
-              top tooltip
-              <div class="tooltip-text tooltip-bottom">Brilliance is evenly distributed? seriously? hmmmm</div>
-            </div>
-          </div>
-          <div class="col-3">
-            <div class="tooltip">
-              top tooltip
-              <div class="tooltip-text tooltip-bottom">Brilliance is evenly distributed? seriously? hmmmm</div>
-            </div>
-          </div>
-          <div class="col-3">
-            <div class="tooltip">
-              top tooltip
-              <div class="tooltip-text tooltip-bottom">Brilliance is evenly distributed? seriously? hmmmm</div>
-            </div>
-          </div>
-        </div>
-    </section>
-    <section>
-      <div class="container">
-        <h3 class="py-40">Alerts</h3>
-        <div class="columns">
-          <div class="col-6">
-            <div class="alert alert-success">
-              <div class="alert-content">
-                <div class="alert-icon">
-                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M13.3333 4L6 11.3333L2.66667 8" stroke="white" stroke-width="2" stroke-linecap="round"
-                      stroke-linejoin="round" />
-                  </svg>
-                </div>
-                <span class="emoji2 happy"></span>
-                <div class="alert-message">Congrats! You successfully screwed up</div>
-              </div>
-              <div class="dismiss-btn">
-                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M13 1L1 13" stroke="#C4C4C4" stroke-linecap="round" stroke-linejoin="round" />
-                  <path d="M1 1L13 13" stroke="#C4C4C4" stroke-linecap="round" stroke-linejoin="round" />
-                </svg>
-              </div>
-            </div>
-          </div>
-          <div class="col-6 slideIn" id="pos-absolute">
-            <div class="alert alert-info">
-              <div class="alert-content">
-                <div class="alert-icon">
-                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M13.3333 4L6 11.3333L2.66667 8" stroke="white" stroke-width="2" stroke-linecap="round"
-                      stroke-linejoin="round" />
-                  </svg>
-                </div>
-                <span class="emoji2 info"></span>
-                <div class="alert-message">Make sure you register.</div>
-              </div>
-              <div class="">
-                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M13 1L1 13" stroke="#C4C4C4" stroke-linecap="round" stroke-linejoin="round" />
-                  <path d="M1 1L13 13" stroke="#C4C4C4" stroke-linecap="round" stroke-linejoin="round" />
-                </svg>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="columns">
-          <div class="col-6">
-            <div class="alert alert-warning">
-              <div class="alert-content">
-                <div class="alert-icon">
-                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g clip-path="url(#clip0)">
-                      <path d="M6.86 2.57347L1.21333 12.0001C1.09691 12.2018 1.03531 12.4303 1.03466 12.6631C1.03401 12.896 1.09433 13.1249 1.20962 13.3272C1.32491 13.5294 1.49115 13.698 1.6918 13.816C1.89246 13.9341 2.12053 13.9976 2.35333 14.0001H13.6467C13.8795 13.9976 14.1075 13.9341 14.3082 13.816C14.5088 13.698 14.6751 13.5294 14.7904 13.3272C14.9057 13.1249 14.966 12.896 14.9653 12.6631C14.9647 12.4303 14.9031 12.2018 14.7867 12.0001L9.14 2.57347C9.02115 2.37754 8.85381 2.21555 8.65413 2.10313C8.45445 1.9907 8.22916 1.93164 8 1.93164C7.77084 1.93164 7.54555 1.9907 7.34587 2.10313C7.14618 2.21555 6.97885 2.37754 6.86 2.57347V2.57347Z"
-                        stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                      <path d="M8 6V8.66667" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                    </g>
-                    <defs>
-                      <clipPath id="clip0">
-                        <rect width="16" height="16" fill="white" />
-                      </clipPath>
-                    </defs>
-                  </svg>
-
-                </div>
-                <span class="emoji2 warning"></span>
-                <div class="alert-message">I'm warning you for the last time</div>
-              </div>
-              <div class="dismiss-btn">
-                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M13 1L1 13" stroke="#C4C4C4" stroke-linecap="round" stroke-linejoin="round" />
-                  <path d="M1 1L13 13" stroke="#C4C4C4" stroke-linecap="round" stroke-linejoin="round" />
-                </svg>
-              </div>
-            </div>
-          </div>
-          <div class="col-6">
-            <div class="alert alert-danger">
-              <div class="alert-content">
-                <div class="alert-icon">
-                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g clip-path="url(#clip0)">
-                      <path d="M6.86 2.57347L1.21333 12.0001C1.09691 12.2018 1.03531 12.4303 1.03466 12.6631C1.03401 12.896 1.09433 13.1249 1.20962 13.3272C1.32491 13.5294 1.49115 13.698 1.6918 13.816C1.89246 13.9341 2.12053 13.9976 2.35333 14.0001H13.6467C13.8795 13.9976 14.1075 13.9341 14.3082 13.816C14.5088 13.698 14.6751 13.5294 14.7904 13.3272C14.9057 13.1249 14.966 12.896 14.9653 12.6631C14.9647 12.4303 14.9031 12.2018 14.7867 12.0001L9.14 2.57347C9.02115 2.37754 8.85381 2.21555 8.65413 2.10313C8.45445 1.9907 8.22916 1.93164 8 1.93164C7.77084 1.93164 7.54555 1.9907 7.34587 2.10313C7.14618 2.21555 6.97885 2.37754 6.86 2.57347V2.57347Z"
-                        stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                      <path d="M8 6V8.66667" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                    </g>
-                    <defs>
-                      <clipPath id="clip0">
-                        <rect width="16" height="16" fill="white" />
-                      </clipPath>
-                    </defs>
-                  </svg>
-                </div>
-                <span class="emoji2 angry"></span>
-                <div class="alert-message">That's not TIA!</div>
-              </div>
-              <div class="">
-                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M13 1L1 13" stroke="#C4C4C4" stroke-linecap="round" stroke-linejoin="round" />
-                  <path d="M1 1L13 13" stroke="#C4C4C4" stroke-linecap="round" stroke-linejoin="round" />
-                </svg>
-              </div>
-            </div>
-          </div>
-        </div>
-    </section>
-    <section>
-      <div class="container">
-        <h3 class="py-40">Modal</h3>
-        <div class="columns">
-          <div class="col-4">
-            <button class="button button-andela shadow button-click" data-target="1">Click to see modal
-            </button>
-            <div class="modal" data-id="1">
-              <div class="modal-content">
-                <div class="modal-header">
-                  BRILLIANCE IS EVENLY DISTRIBUTED
-                  <span class="close-modal">
-                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M11 1L1 11" stroke="black" stroke-linecap="round" stroke-linejoin="round" />
-                      <path d="M1 1L11 11" stroke="black" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-                  </span>
-                </div>
-                <div class="modal-body">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus assumenda earum corrupti aperiam
-                  temporibus, illum vero tempora? Quae, possimus debitis?
-                </div>
-                <div class="modal-footer">
-                  <div class="flex-end">
-                    <button class="button button-outline-dark">Proceed</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-4">
-            <button class="button button-default button-click">Click to see modal</button>
-            <div class="modal">
-              <div class="modal-content">
-                <div class="modal-header">
-                  THAT'S THE WAY IT IS
-                  <span class="close-modal">
-                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M11 1L1 11" stroke="black" stroke-linecap="round" stroke-linejoin="round" />
-                      <path d="M1 1L11 11" stroke="black" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-                  </span>
-                </div>
-                <div class="modal-body">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus assumenda earum corrupti aperiam
-                  temporibus,
-                  illum vero tempora? Quae, possimus debitis?
-                </div>
-                <div class="modal-footer">
-                  <div class="flex-start">
-                    <button class="button button-dark shadow">Proceed</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-4">
-            <button class="button button-default button-click" data-target="2">Click to see modal
-            </button>
-            <div class="modal" data-id="2">
-              <div class="modal-content">
-                <div class="modal-header">
-                  Sullivan's hands are tied but not tied enough
-                  <span class="close-modal">
-                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M11 1L1 11" stroke="black" stroke-linecap="round" stroke-linejoin="round" />
-                      <path d="M1 1L11 11" stroke="black" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-                  </span>
-                </div>
-                <div class="modal-body">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus assumenda earum corrupti aperiam
-                  temporibus,
-                  illum vero tempora? Quae, possimus debitis?
-                </div>
-                <div class="modal-footer">
-                  <div class="flex-end">
-                    <button class="button mr-10">Cancel</button>
-                    <button class="button button-outline-dark">Proceed</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
   </div>
   <script src="./assets/js/main.js"></script>
 </body>
