@@ -59,6 +59,16 @@
       transition: all ease-in .1s;
     }
   }
+  &-shade {
+    background: #17aa56;
+    color: #fff;
+    border-radius: 7px;
+    box-shadow: 0 5px #119e4d;
+    &:hover {
+      box-shadow: none;
+      transition: box-shadow .3s ease-in-out;
+    }
+  }
 }
 .button::-moz-focus-inner {
   border: none;
