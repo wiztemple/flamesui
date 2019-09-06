@@ -166,3 +166,19 @@
 .bg-black {
   background-color: rgba(0, 0, 0, 0.247);
 }
+
+/* border */
+.bordered {
+  border: 1px solid #eee;
+}
+.b-0 {
+  border: 0 !important;
+}
+.bb-0 {
+  border-bottom: 0 !important;
+}
+
+/* shadow */
+.shadow {
+  box-shadow: 0 4px 6px -1px rgba(0,0,0,.1),0 2px 4px -1px rgba(0,0,0,.06)!important;
+}

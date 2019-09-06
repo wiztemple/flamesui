@@ -243,6 +243,20 @@ dl {
 .bg-black {
   background-color: rgba(0, 0, 0, 0.247); }
 
+/* border */
+.bordered {
+  border: 1px solid #eee; }
+
+.b-0 {
+  border: 0 !important; }
+
+.bb-0 {
+  border-bottom: 0 !important; }
+
+/* shadow */
+.shadow {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06) !important; }
+
 .navbar {
   background-color: #fff;
   height: 4.063rem;
@@ -1042,6 +1056,22 @@ body.navbar-fixed-top {
       border-width: 5px;
       border-style: solid;
       border-color: #222 transparent transparent transparent; }
+
+.list {
+  padding: 0;
+  position: relative;
+  background-color: #fff;
+  border-radius: 5px; }
+  .list-item {
+    list-style: none;
+    padding: 10px 20px;
+    font-weight: 100;
+    border-bottom: 1px solid rgba(238, 238, 238, 0.616); }
+    .list-item:last-child {
+      border-bottom: 0; }
+    .list-item:hover {
+      background-color: rgba(238, 238, 238, 0.397);
+      transition: background-color ease-in-out .2s; }
 
 .checkboxlabel {
   margin: 0;

@@ -1,0 +1,19 @@
+.list {
+  padding: 0;
+  position: relative;
+  background-color: #fff;
+  border-radius: 5px;
+  &-item {
+    list-style: none;
+    padding: 10px 20px;
+    font-weight: 100;
+    border-bottom: 1px solid rgba(238, 238, 238, 0.616);
+    &:last-child {
+      border-bottom:0;
+    }
+    &:hover {
+      background-color: rgba(238, 238, 238, 0.397);
+      transition: background-color ease-in-out .2s;
+    }
+  }
+}
