@@ -2,12 +2,16 @@
   width: 262.5px !important;
   height: 100%;
   position: fixed !important;
-  z-index: 10;
+  z-index: 40;
   top: 0;
   left: 0;
-  background-color: $color-white;
-  overflow-x: hidden;
+  background-color:rgba(238, 238, 238, 0.26);
   padding: 0 !important;
+}
+.logo {
+  position: relative;
+  padding: 40px 10px 0 10px;
+  font-family: 'Pacifico', cursive;
 }
   @media screen and (max-width: 576px) {
    .sidebar {
@@ -20,12 +24,9 @@
    }
   }
 .sidebar-item > h4 {
-  padding: 20px 20px 5px 20px;
+  padding-left: 10px;
 }
-.sidebar-item > h4:nth-child(2) {
-  margin-top: 10px;
-  padding: 20px 20px 5px 20px;
-}
+
 .sidebar-child {
   padding-left: 0px;
   margin-left: 0;
@@ -43,11 +44,12 @@
   color: #444;
 }
 .sidebar-child > li a:hover {
-  color: dodgerblue;
-  transition: 86ms;
+  color: #000;
+  font-weight: bolder;
+  transition: color 86ms ease-in-out;
 }
 .sidebar-child > li a.active {
-  color: dodgerblue;
+  color: #000;
   font-weight: 700;
 }
 .main {

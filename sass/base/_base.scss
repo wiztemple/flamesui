@@ -12,7 +12,6 @@
 
 html {
   box-sizing: border-box;
-  background-color: var(--body-bg-color);
   font-size: 16px;
   min-width: 300px;
   overflow-x: hidden;
@@ -57,37 +56,26 @@ dl {
 .small {
   margin-top: 0rem;
 }
-h1,
 .h1 {
   font-size: 4rem;
   line-height: 5rem;
 }
-
-h2,
 .h2 {
   font-size: 3rem;
   line-height: 4rem;
 }
-
-h3,
 .h3 {
   font-size: 2rem;
   line-height: 3rem;
 }
-
-h4,
 .h4 {
   font-size: 1.5rem;
   line-height: 2.25rem;
 }
-
-h5,
 .h5 {
   font-size: 1.125rem;
   line-height: 1.75rem;
 }
-
-h6,
 .h6 {
   font-size: 1rem;
   line-height: 1.5rem;
@@ -100,7 +88,7 @@ body {
   text-align: left;
   font-size: 1rem;
   line-height: 1.6;
-  background-color: #fff;
+  background-color:#fff;
 }
 p,
 ol,
