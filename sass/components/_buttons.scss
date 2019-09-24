@@ -38,7 +38,7 @@
     }
   }
   &-rectangle {
-    border-radius: 0;
+    border-radius: 3px;
   }
   &-rounded {
     border-radius: 30px;
@@ -50,6 +50,18 @@
   &-andela {
     color: $color-white;
     background-color: $andela-color;
+  }
+  &-white {
+    background-color: $color-white;
+    background-image: linear-gradient(180deg,#fff,#f5f5fa);
+  }
+  &-shadow {
+   text-decoration: none;
+   transition: all .2s ease-out;
+   box-shadow: 0 4px 11px 0 rgba(37,44,97,.15), 0 1px 3px 0 rgba(93,100,148,.2);
+   &:hover {
+     box-shadow: 0 1px 3px 0 rgba(37,44,97,.15), 0 1px 2px 0 rgba(93,100,148,.2);
+   }
   }
   &-outline-dark {
     border: 1px solid #000;
