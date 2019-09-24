@@ -75,6 +75,7 @@ dl {
 
 body {
   font-family: 'Open Sans', sans-serif;
+  -webkit-font-smoothing: antialiased !important;
   margin: 0;
   padding: 0;
   text-align: left;
@@ -844,7 +845,7 @@ body.navbar-fixed-top {
     border: 1px solid rgba(0, 0, 0, 0.05);
     border-radius: 5px;
     animation-name: modalopen;
-    animation-duration: 1s; }
+    animation-duration: 1500ms; }
   .modal-header {
     position: relative;
     padding: 20px 20px;
